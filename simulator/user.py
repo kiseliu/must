@@ -13,7 +13,7 @@ from simulator.agent.Generator import Generator as retrieval_generator
 import os
 from simulator import dialog_config
 from copy import deepcopy
-from seq2seq_nlg import sample as Seq2Seq_nlg
+from simulator.seq2seq_nlg import sample as Seq2Seq_nlg
 cur_dir = os.getcwd()
 
 actionID_to_template = {

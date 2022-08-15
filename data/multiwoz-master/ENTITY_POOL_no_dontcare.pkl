@@ -1,0 +1,209 @@
+(dp0
+S'food'
+p1
+(lp2
+Vasian oriental
+p3
+aVmexican
+p4
+aVchinese
+p5
+aVeastern european
+p6
+aVgerman
+p7
+aVmoroccan
+p8
+aVrussian
+p9
+aVaustrian
+p10
+aVturkish
+p11
+aVgastropub
+p12
+aVromanian
+p13
+aVindonesian
+p14
+aVhungarian
+p15
+aVnorth american
+p16
+aVcatalan
+p17
+aVfusion
+p18
+aVworld
+p19
+aVkorean
+p20
+aVcanapes
+p21
+aVmodern global
+p22
+aVmalaysian
+p23
+aVsteakhouse
+p24
+aVmolecular gastronomy
+p25
+aVitalian
+p26
+aVportuguese
+p27
+aVspanish
+p28
+aVmediterranean
+p29
+aVjapanese
+p30
+aVpersian
+p31
+aVpolish
+p32
+aVmodern eclectic
+p33
+aVthe americas
+p34
+aVcaribbean
+p35
+aVmodern american
+p36
+aVcreative
+p37
+aVindian
+p38
+aVinternational
+p39
+aVchristmas
+p40
+aVbarbeque
+p41
+aVbistro
+p42
+aVsouth indian
+p43
+aVpanasian
+p44
+aVmiddle eastern
+p45
+aVfrench
+p46
+aVafternoon tea
+p47
+aVenglish
+p48
+aVvegetarian
+p49
+aVvietnamese
+p50
+aVbritish
+p51
+aVkosher
+p52
+aVlatin american
+p53
+aVbasque
+p54
+aVnew zealand
+p55
+aVcorsica
+p56
+aVunusual
+p57
+aVbrazilian
+p58
+aVaustralian
+p59
+aVbelgian
+p60
+aVdanish
+p61
+aVlight bites
+p62
+aVmodern european
+p63
+aVeritrean
+p64
+aVtuscan
+p65
+aVthai
+p66
+aVscottish
+p67
+aVlebanese
+p68
+aVscandinavian
+p69
+aVvenetian
+p70
+aVjamaican
+p71
+aVirish
+p72
+aVaustralasian
+p73
+aVsingaporean
+p74
+aVcrossover
+p75
+aVhalal
+p76
+aVcantonese
+p77
+aVswedish
+p78
+aVtraditional
+p79
+aVsouth african
+p80
+aVnorthern european
+p81
+aVnorth indian
+p82
+aVeuropean
+p83
+aVwelsh
+p84
+aVsri lankan
+p85
+aVpolynesian
+p86
+aVafghan
+p87
+aVcuban
+p88
+aVseafood
+p89
+aVnorth african
+p90
+aVgreek
+p91
+aVafrican
+p92
+aVswiss
+p93
+asS'pricerange'
+p94
+(lp95
+Vmoderate
+p96
+aVcheap
+p97
+aVexpensive
+p98
+asS'area'
+p99
+(lp100
+Vwest
+p101
+aVeast
+p102
+aVnorth
+p103
+aVsouth
+p104
+aVcentre
+p105
+as.

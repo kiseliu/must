@@ -1,6 +1,6 @@
 import logging
 import time
-import configparser
+import os
 
 class _Config:
     def __init__(self):
@@ -161,6 +161,9 @@ class _Config:
         current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
 
         stderr_handler = logging.StreamHandler()
+        log_dir = './sequicity_user/log'
+        if not os.path.exists(log_dir):
+            os.mkdir(log_dir)
         file_handler = logging.FileHandler('./sequicity_user/log/log_{}.txt'.format(current_time))
         logging.basicConfig(handlers=[stderr_handler, file_handler])
         logger = logging.getLogger()
