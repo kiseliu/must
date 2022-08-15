@@ -34,7 +34,7 @@ class EvalConfig(object):
 
     # rl
     n_episodes = 30000
-    save_dir = './evaluation/cross_test/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
+    save_dir = './evaluation_results/cross_test/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     use_sequicity_for_rl_model = False

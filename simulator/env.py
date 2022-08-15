@@ -330,32 +330,6 @@ class Enviroment(object):
         next_state, reward, self.done = self.step_user(mode=mode)
         print('reward per turn', reward)
         return next_state, reward, self.done
-        ############################################################################
-
-
-        """
-        self.last_usr_act, self.last_usr_sent = self.user.respond(sys_act=sys_act)
-        if self.verbose:
-            print("{} Usr: {}".format(self.step_i, self.last_usr_sent))
-
-        if mode == dialog_config.RL_WARM_START:
-            self.last_sys_act, self.last_sys_sent = self.system.respond(usr_sent=None, rl_sys_act=None, mode=mode, usr_act=self.last_usr_act)
-        elif mode == dialog_config.RL_TRAINING:
-            self.last_sys_act, self.last_sys_sent = self.system.respond(usr_sent=self.last_usr_sent, rl_sys_act=sys_act, mode=mode, usr_act=None)
-        elif mode == dialog_config.RANDOM_ACT:
-            self.last_sys_act, self.last_sys_sent = self.system.respond(usr_sent=None, rl_sys_act=sys_act, mode=mode, usr_act=self.last_usr_act)
-
-
-        if self.verbose:
-            print("{} Sys: {}".format(self.step_i, self.last_sys_sent))
-
-        next_state = self.system.prepare_state_representation()
-        reward = self.evaluate_cur_move()
-
-        self.step_i += 1
-
-        return next_state, reward, self.done, self.last_sys_act
-        """
 
     def step_user(self, mode, mturk_res=None):
         import pdb
@@ -465,8 +439,6 @@ class Enviroment(object):
 
     def evaluate_cur_move_new(self):
         # pdb.set_trace()
-
-
         def calculate_per_turn_reward(self, last_usr_act_str, sys_act_str):
             # last_usr_act = self.user.state['usr_act_sequence'][-2]
             turn_reward = dialog_config.PER_TURN_REWARD
