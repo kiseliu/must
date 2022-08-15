@@ -1,14 +1,14 @@
 from __future__ import division, print_function
-import numpy as np
-# from util import oneHotLabel
-import pickle
 import os
+
+import numpy as np
 from scipy.stats import entropy
 from scipy.stats import wasserstein_distance
 import simulator.dialog_config as dialog_config
 from simulator.agent.core import UserAct, SystemAct, Action
 # from config import Config
 import pdb
+from beeprint import pp
 
 # CONFIG = Config()
 
@@ -197,7 +197,8 @@ class Enviroment(object):
         self.step_i = 0
         self.last_sys_act, self.last_sys_sent = None, None
 
-        print("goal", self.user.goal)
+        print("goal: ")
+        pp(self.user.goal)
         # first user sentence
         next_state = self.step_user(mode=mode, mturk_res=mturk_res)
 

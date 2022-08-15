@@ -208,6 +208,8 @@ def run_one_dialog(env, pg_reinforce):
     while True:
         if config.with_bit:
             bit_vecs = get_bit_vector(system)
+            print('sys state = ')
+            pp(system.state)
         else:
             bit_vecs = None
         print('bit_vec: ', bit_vecs)
@@ -231,23 +233,6 @@ def run_one_dialog(env, pg_reinforce):
     print("#" * 30)
 
     return total_rewards, total_t, env.success
-
-def test(env, pg_reinforce, n=50):
-    reward_list = []
-    dialogLen_list = []
-    success_list = []
-    # print(i_episode)
-    for i_test in tqdm(range(n)):
-        assert len(pg_reinforce.reward_buffer) == 0
-        cur_reward, cur_dialogLen, cur_success = run_one_dialog(env, pg_reinforce)
-        assert cur_success is not None
-        reward_list.append(cur_reward)
-        dialogLen_list.append(cur_dialogLen)
-        # print(cur_reward)
-        # print(cur_dialogLen)
-        # print(cur_success)
-        success_list.append(int(cur_success))
-    return reward_list, dialogLen_list, success_list
 
 
 def load_policy_model(model_dir="model/test_nlg_no_warm_up_with_nlu.pkl"):
@@ -283,4 +268,6 @@ pg_reinforce = PolicyGradientREINFORCE(
 env = Enviroment(user=user, system=system, verbose=True, config=config)
 NUM_TEST = 50
 
-test(env=env, pg_reinforce=pg_reinforce, n=NUM_TEST)
+for _ in tqdm(range(NUM_TEST)):
+    assert len(pg_reinforce.reward_buffer) == 0
+    cur_reward, cur_dialogLen, cur_success = run_one_dialog(env, pg_reinforce)

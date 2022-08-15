@@ -1,20 +1,14 @@
-import pandas as pd
-import numpy as np
-import re
-import sys
+import pickle as pkl
 
-print(sys.path)
 import spacy
-
 spacy_en = spacy.load('en_core_web_sm')
+
+import pandas as pd
+
 import torch
 import torch.nn as nn
-from torch.nn import init
-from torchtext import vocab
 from torchtext import data
-from torchtext.data import Iterator, BucketIterator
 from torchtext.vocab import Vectors
-import pickle as pkl
 
 from simulator.nlu_model.nlu_config import Config
 config = Config()

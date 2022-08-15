@@ -1,25 +1,24 @@
+import os
 import sys
-print(sys.path)
 sys.path.append("./")
 from simulator.nlu_model.model import NLU_model
 from simulator.nlu_model.data_preprocess import DataProcessor, l2_matrix_norm, AverageMeter, print_cm, eval_
 
-from torch import nn
-from torch.autograd import Variable
-from torch import optim
-import torch
 import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.metrics import f1_score, precision_score, classification_report, hamming_loss, recall_score
+
+import torch
+from torch import nn
+from torch import optim
 from torch.nn.utils import clip_grad_norm
-import sys
+
 from simulator.nlu_model.nlu_config import Config
 
 from tqdm import tqdm
 
 import time
-import matplotlib
-import matplotlib.pyplot as plt
-from sklearn.metrics import f1_score, precision_score, classification_report, hamming_loss, recall_score
-import os
+
 
 plt.switch_backend('agg')
 

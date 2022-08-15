@@ -5,27 +5,19 @@ import os, sys
 
 
 class EvalConfig(object):
-    resume = True
-    # resume_rl_model_dir = '/home/wyshi/simulator/model/save/nlg_sample/oneHot_newReward_bitMore/0_2019-5-19-10-54-13-6-139-1.pkl'
-
-    rule_base_sys_nlu = "./simulator/nlu_model/model/model-test-30-new.pkl"
-
-#######################################################**************
-    use_sl_simulator = True
-    use_sl_generative = True
-
-    nlg_sample = False
-    nlg_template = False
-
-    use_new_reward = False
-#######################################################***************
-
-    INTERACTIVE = False
-
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")#'cpu'#torch.device("cuda" if torch.cuda.is_available() else "cpu")
     use_gpu = torch.cuda.is_available()
+    
+    # dialogue system
+    #######################################################***************
+    rule_base_sys_nlu = "./simulator/nlu_model/model/model-test-30-new.pkl"
+    # resume_rl_model_dir = '/home/wyshi/simulator/model/save/nlg_sample/oneHot_newReward_bitMore/0_2019-5-19-10-54-13-6-139-1.pkl'
+    resume = True
 
     # user simulator
+    #######################################################**************
+    use_sl_simulator = True
+    use_sl_generative = True
     nlg_sample = False
     nlg_template = True
     csv_for_generator = './data/multiwoz-master/data/multi-woz/nlg/for_generator.csv'
@@ -33,6 +25,7 @@ class EvalConfig(object):
     topk = 20
 
     # rl
+    INTERACTIVE = False
     n_episodes = 30000
     save_dir = './evaluation_results/cross_test/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
     if not os.path.exists(save_dir):
@@ -48,7 +41,6 @@ class EvalConfig(object):
         assert sum([with_bit_rep_only, with_bit_more, with_bit_all]) == 0
 
     use_new_reward = False
-
 
     bit_not_used_in_update = True
     use_sent = False
@@ -77,5 +69,5 @@ class EvalConfig(object):
 
     # sequicity parameters
     vocab_size = 800
-    pretrained_dir = './sequicity_multiwoz_0.4/models/multiwoz_sys911.pkl'
+    pretrained_dir = './sequicity_user/models/multiwoz_sys911.pkl'
 
