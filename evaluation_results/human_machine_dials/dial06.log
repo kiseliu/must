@@ -1,0 +1,81 @@
+# sys_agent
+goal = {'id': 'WOZ20225.json', 
+        'cur_info': {'food': 'asian oriental', 'area': 'north'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: i want an asian oriental restaurant .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: can you help to find a restaurant in the north?
+sys: saigon city is a asian oriental restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'WOZ20225.json', 
+        'cur_info': {'food': 'asian oriental', 'area': 'north'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: i want an asian oriental restaurant .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: can you help to find a restaurant in the north?
+sys: saigon city is a asian oriental restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'WOZ20225.json', 
+        'cur_info': {'food': 'asian oriental', 'area': 'north'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: i want an asian oriental restaurant .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: can you help to find a restaurant in the north?
+sys: saigon city is a asian oriental restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'WOZ20225.json', 
+        'cur_info': {'food': 'asian oriental', 'area': 'north'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: i want an asian oriental restaurant .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: can you help to find a restaurant in the north?
+sys: saigon city is a asian oriental restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'WOZ20225.json', 
+        'cur_info': {'food': 'asian oriental', 'area': 'north'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: i want an asian oriental restaurant .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: can you help to find a restaurant in the north?
+sys: saigon city is a asian oriental restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: saigon city is located at 169 High Street Chesterton Chesterton . Its phone number is 01223356555 and the postcode is cb41nl . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# result: same

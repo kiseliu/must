@@ -1,0 +1,98 @@
+# sys_agent
+goal = {'id': 'SSNG0103.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'west'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'book_first_choice': {'people': '4', 'day': 'wednesday', 'time': '13:30'}, 
+        'book_second_choice': {'day': 'saturday'}, 
+        'cur_book': {'people': '4', 'day': 'wednesday', 'time': '13:30'}}
+usr: i am looking for an expensive british restaurant in the west .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: travellers rest is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 4 people at 13:30 on wednesday. 
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30 on saturday ?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0103.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'west'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'book_first_choice': {'people': '4', 'day': 'wednesday', 'time': '13:30'}, 
+        'book_second_choice': {'day': 'saturday'}, 
+        'cur_book': {'people': '4', 'day': 'wednesday', 'time': '13:30'}}
+usr: i am looking for an expensive british restaurant in the west .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: travellers rest is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 4 people at 13:30 on wednesday. 
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30 on saturday ?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0103.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'west'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'book_first_choice': {'people': '4', 'day': 'wednesday', 'time': '13:30'}, 
+        'book_second_choice': {'day': 'saturday'}, 
+        'cur_book': {'people': '4', 'day': 'wednesday', 'time': '13:30'}}
+usr: i am looking for an expensive british restaurant in the west .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: graffiti is located at Hotel Felix Whitehouse Lane Huntingdon Road . Its phone number is 01223277977 and the postcode is cb30lx . is there anything else i can help you with ?
+usr: are there other options?
+sys: graffiti is located at Hotel Felix Whitehouse Lane Huntingdon Road . Its phone number is 01223277977 and the postcode is cb30lx . is there anything else i can help you with ?
+usr: then could you help me book a table for 4 people at 13:30 on wednesday. 
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30 on saturday ?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0103.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'west'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'book_first_choice': {'people': '4', 'day': 'wednesday', 'time': '13:30'}, 
+        'book_second_choice': {'day': 'saturday'}, 
+        'cur_book': {'people': '4', 'day': 'wednesday', 'time': '13:30'}}
+usr: i am looking for an expensive british restaurant in the west .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: travellers rest is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 4 people at 13:30 on wednesday. 
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30 on saturday ?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0103.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'west'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'book_first_choice': {'people': '4', 'day': 'wednesday', 'time': '13:30'}, 
+        'book_second_choice': {'day': 'saturday'}, 
+        'cur_book': {'people': '4', 'day': 'wednesday', 'time': '13:30'}}
+usr: i am looking for an expensive british restaurant in the west .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: travellers rest is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 4 people at 13:30 on wednesday. 
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30 on saturday ?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt wrong

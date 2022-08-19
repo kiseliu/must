@@ -1,0 +1,107 @@
+# sys_agent
+goal = {'id': 'SNG0638.json', 
+        'info_first_choice': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'book_first_choice': {'time': '18:00', 'day': 'sunday', 'people': '4'}, 
+        'book_second_choice': {'time': '19:00'}, 
+        'cur_book': {'time': '18:00', 'day': 'sunday', 'people': '4'}}
+usr: are there any chinese restaurant -s in the south of cambridge ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes , i would prefer a moderate one please .
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about one that serves italian food then ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 4 people?
+sys: Could you please tell me what day and time you would like for the reservation?
+usr: i need a reservation for sunday at 18:00 , please .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG0638.json', 
+        'info_first_choice': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'book_first_choice': {'time': '18:00', 'day': 'sunday', 'people': '4'}, 
+        'book_second_choice': {'time': '19:00'}, 
+        'cur_book': {'time': '18:00', 'day': 'sunday', 'people': '4'}}
+usr: are there any chinese restaurant -s in the south of cambridge ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes , i would prefer a moderate one please .
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about one that serves italian food then ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 4 people?
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG0638.json', 
+        'info_first_choice': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'book_first_choice': {'time': '18:00', 'day': 'sunday', 'people': '4'}, 
+        'book_second_choice': {'time': '19:00'}, 
+        'cur_book': {'time': '18:00', 'day': 'sunday', 'people': '4'}}
+usr: are there any chinese restaurant -s in the south of cambridge ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes , i would prefer a moderate one please .
+sys: the good luck chinese food takeaway is located at 82 Cherry Hinton Road Cherry Hinton . Its phone number is 01223244149 and the postcode is cb17ag . is there anything else i can help you with ?
+usr: sorry, I want to find a moderate chinese restaurant in the south of the town.
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about one that serves italian food then ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 4 people?
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG0638.json', 
+        'info_first_choice': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'book_first_choice': {'time': '18:00', 'day': 'sunday', 'people': '4'}, 
+        'book_second_choice': {'time': '19:00'}, 
+        'cur_book': {'time': '18:00', 'day': 'sunday', 'people': '4'}}
+usr: are there any chinese restaurant -s in the south of cambridge ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes , i would prefer a moderate one please .
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about one that serves italian food then ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 4 people?
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG0638.json', 
+        'info_first_choice': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'chinese', 'pricerange': 'moderate', 'area': 'south'}, 
+        'book_first_choice': {'time': '18:00', 'day': 'sunday', 'people': '4'}, 
+        'book_second_choice': {'time': '19:00'}, 
+        'cur_book': {'time': '18:00', 'day': 'sunday', 'people': '4'}}
+usr: are there any chinese restaurant -s in the south of cambridge ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes , i would prefer a moderate one please .
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about one that serves italian food then ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 4 people?
+sys: Could you please tell me what day and time you would like for the reservation?
+usr: i need a reservation for sunday at 18:00 , please .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# result: agenr|rnnt|gpt_sl wrong

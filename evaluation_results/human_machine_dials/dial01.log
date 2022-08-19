@@ -1,0 +1,61 @@
+# sys_agent
+goal = {'id': 'WOZ20421.json', 
+        'cur_info': {'food': 'mexican'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: I am looking for a restaurant that serves mexican food.
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: chiquito sounds good . can you give me an address and phone number ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'WOZ20421.json', 
+        'cur_info': {'food': 'mexican'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: I am looking for a restaurant that serves mexican food.
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: chiquito sounds good . can you give me an address and phone number ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'WOZ20421.json', 
+        'cur_info': {'food': 'mexican'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: I am looking for a restaurant that serves mexican food.
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: chiquito sounds good . can you give me an address and phone number ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'WOZ20421.json', 
+        'cur_info': {'food': 'mexican'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: I am looking for a restaurant that serves mexican food.
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: chiquito sounds good . can you give me an address and phone number ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'WOZ20421.json', 
+        'cur_info': {'food': 'mexican'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone']}
+usr: I am looking for a restaurant that serves mexican food.
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: chiquito sounds good . can you give me an address and phone number ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# result: same

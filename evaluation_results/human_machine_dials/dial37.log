@@ -1,0 +1,111 @@
+# sys_agent
+goal = {'id': 'SSNG0146.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4, 
+        'book_first_choice': {'people': '5', 'day': 'wednesday', 'time': '10:30'}, 
+        'book_second_choice': {'time': '11:30'}, 
+        'cur_book': {'people': '5', 'day': 'wednesday', 'time': '10:30'}}
+usr: could you help me find a chinese restaurant please ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i don't care the price, i would like expensive .
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 10:30 on wednesday. 
+sys: tang chinese is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i would like a table at 10:30 on wednesday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: how about 11:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0146.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4, 
+        'book_first_choice': {'people': '5', 'day': 'wednesday', 'time': '10:30'}, 
+        'book_second_choice': {'time': '11:30'}, 
+        'cur_book': {'people': '5', 'day': 'wednesday', 'time': '10:30'}}
+usr: could you help me find a chinese restaurant please ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i don't care the price, i would like expensive .
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 10:30 on wednesday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 10:30 on wednesday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: how about 11:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0146.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4, 
+        'book_first_choice': {'people': '5', 'day': 'wednesday', 'time': '10:30'}, 
+        'book_second_choice': {'time': '11:30'}, 
+        'cur_book': {'people': '5', 'day': 'wednesday', 'time': '10:30'}}
+usr: could you help me find a chinese restaurant please ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i don't care the price, i would like expensive .
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 10:30 on wednesday. 
+sys: ugly duckling is located at 12 St. Johns Street City Centre . Its phone number is 012323323737 and the postcode is cb21tw . is there anything else i can help you with ?
+usr: i would like a table at 10:30 on wednesday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: how about 11:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0146.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4, 
+        'book_first_choice': {'people': '5', 'day': 'wednesday', 'time': '10:30'}, 
+        'book_second_choice': {'time': '11:30'}, 
+        'cur_book': {'people': '5', 'day': 'wednesday', 'time': '10:30'}}
+usr: could you help me find a chinese restaurant please ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i don't care the price, i would like expensive .
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 10:30 on wednesday. 
+sys: tang chinese is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i would like a table at 10:30 on wednesday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: how about 11:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0146.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4, 
+        'book_first_choice': {'people': '5', 'day': 'wednesday', 'time': '10:30'}, 
+        'book_second_choice': {'time': '11:30'}, 
+        'cur_book': {'people': '5', 'day': 'wednesday', 'time': '10:30'}}
+usr: could you help me find a chinese restaurant please ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i don't care the price, i would like expensive .
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 10:30 on wednesday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 10:30 on wednesday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: how about 11:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: agent|rnnt|gpt_sl wrong

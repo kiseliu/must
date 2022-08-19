@@ -1,0 +1,115 @@
+# sys_agent
+goal = {'id': 'SNG0516.json', 
+        'info_first_choice': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'cur_book': {'time': '13:15', 'day': 'tuesday', 'people': '2'}}
+usr: i am looking for a place to dine in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: is there any unusual food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i am looking for an unusual restaurant in the centre .
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: alright, can you help me find a cheap place ?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 2 people on tuesday?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i need a reservation at 13:15.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: can you check again? i need a reservation at 13:15 for 2 people on tuesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG0516.json', 
+        'info_first_choice': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'cur_book': {'time': '13:15', 'day': 'tuesday', 'people': '2'}}
+usr: i am looking for a place to dine in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: is there any unusual food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i am looking for an unusual restaurant in the centre .
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: alright, can you help me find a cheap place ?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 2 people on tuesday?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i need a reservation at 13:15.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: can you check again? i need a reservation at 13:15 for 2 people on tuesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG0516.json', 
+        'info_first_choice': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'cur_book': {'time': '13:15', 'day': 'tuesday', 'people': '2'}}
+usr: i am looking for a place to dine in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: is there any unusual food ?
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: i am looking for an unusual restaurant in the centre .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: alright, can you help me find a cheap place ?
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: i am looking for an cheap restaurant in the centre that serves unusual food.
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 2 people on tuesday?
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG0516.json', 
+        'info_first_choice': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'cur_book': {'time': '13:15', 'day': 'tuesday', 'people': '2'}}
+usr: i am looking for a place to dine in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: is there any unusual food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i am looking for an unusual restaurant in the centre .
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: alright, can you help me find a cheap place ?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 2 people on tuesday?
+sys: ask restaurant is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG0516.json', 
+        'info_first_choice': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'italian'}, 
+        'cur_info': {'food': 'unusual', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'cur_book': {'time': '13:15', 'day': 'tuesday', 'people': '2'}}
+usr: i am looking for a place to dine in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: is there any unusual food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i am looking for an unusual restaurant in the centre .
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: alright, can you help me find a cheap place ?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: ok, can you help me to make a reservation for 2 people on tuesday?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i need a reservation at 13:15.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: can you check again? i need a reservation at 13:15 for 2 people on tuesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: all wrong

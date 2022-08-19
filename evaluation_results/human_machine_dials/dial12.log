@@ -1,0 +1,83 @@
+# sys_agent
+goal = {'id': 'WOZ20538.json', 
+        'first_choice_match': 4,
+        'cur_info': {'food': 'chinese', 'pricerange': 'cheap'}, 
+        'reqt': ['address', 'phone']}
+usr: is there any place that serves chinese food ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find a cheap one?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: rice house is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, i want the address and the phone number of charlie chan.
+sys: rice house is located at 88 Mill Road City Centre . Its phone number is 01223367755 and the postcode is cb12bd . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'WOZ20538.json', 
+        'first_choice_match': 4,
+        'cur_info': {'food': 'chinese', 'pricerange': 'cheap'}, 
+        'reqt': ['address', 'phone']}
+usr: is there any place that serves chinese food ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find a cheap one?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: and i want the phone number of charlie chan.
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'WOZ20538.json', 
+        'first_choice_match': 4,
+        'cur_info': {'food': 'chinese', 'pricerange': 'cheap'}, 
+        'reqt': ['address', 'phone']}
+usr: is there any place that serves chinese food ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find a cheap one?
+sys: the good luck chinese food takeaway is located at 82 Cherry Hinton Road Cherry Hinton . Its phone number is 01223244149 and the postcode is cb17ag . is there anything else i can help you with ?
+usr: sorry, can you help me find a cheap restaurant that serves chinese food ?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: and i want the phone number of charlie chan.
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'WOZ20538.json', 
+        'first_choice_match': 4,
+        'cur_info': {'food': 'chinese', 'pricerange': 'cheap'}, 
+        'reqt': ['address', 'phone']}
+usr: is there any place that serves chinese food ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find a cheap one?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: and i want the phone number of charlie chan.
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'WOZ20538.json', 
+        'first_choice_match': 4,
+        'cur_info': {'food': 'chinese', 'pricerange': 'cheap'}, 
+        'reqt': ['address', 'phone']}
+usr: is there any place that serves chinese food ?
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find a cheap one?
+sys: charlie chan is a chinese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: and i want the phone number of charlie chan.
+sys: charlie chan is located at Regent Street City Centre . Its phone number is 01223361763 and the postcode is cb21db . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: agent|rnnt wrong

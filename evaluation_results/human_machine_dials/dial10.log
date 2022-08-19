@@ -1,0 +1,81 @@
+# sys_agent
+goal = {'id': 'SNG0665.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'reqt': ['phone', 'address', 'postcode']}
+usr: hello ! i would like to go to a restaurant in the centre , please .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I want to find an expensive restaurant.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number, address and postcode ?
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG0665.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'reqt': ['phone', 'address', 'postcode']}
+usr: hello ! i would like to go to a restaurant in the centre , please .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I want to find an expensive restaurant.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number, address and postcode ?
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG0665.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'reqt': ['phone', 'address', 'postcode']}
+usr: hello ! i would like to go to a restaurant in the centre , please .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I want to find an expensive restaurant.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number, address and postcode ?
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG0665.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'reqt': ['phone', 'address', 'postcode']}
+usr: hello ! i would like to go to a restaurant in the centre , please .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I want to find an expensive restaurant.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number, address and postcode ?
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG0665.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'reqt': ['phone', 'address', 'postcode']}
+usr: hello ! i would like to go to a restaurant in the centre , please .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I want to find an expensive restaurant.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number, address and postcode ?
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: same

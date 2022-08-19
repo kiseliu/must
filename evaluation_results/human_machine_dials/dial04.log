@@ -1,0 +1,73 @@
+# sys_agent
+goal = {'id': 'WOZ20650.json', 
+        'cur_info': {'food': 'indian', 'area': 'north'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: are there any restaurant -s that serve indian food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i want to dine in the north .
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'WOZ20650.json', 
+        'cur_info': {'food': 'indian', 'area': 'north'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: are there any restaurant -s that serve indian food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i want to dine in the north .
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'WOZ20650.json', 
+        'cur_info': {'food': 'indian', 'area': 'north'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: are there any restaurant -s that serve indian food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i want to dine in the north .
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: sorry, I want to find an indian restaurant located in the north.
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'WOZ20650.json', 
+        'cur_info': {'food': 'indian', 'area': 'north'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: are there any restaurant -s that serve indian food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i want to dine in the north .
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'WOZ20650.json', 
+        'cur_info': {'food': 'indian', 'area': 'north'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: are there any restaurant -s that serve indian food ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i want to dine in the north .
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt wrong

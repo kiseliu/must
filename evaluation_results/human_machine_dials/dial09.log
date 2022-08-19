@@ -1,0 +1,73 @@
+# sys_agent
+goal = {'id': 'WOZ20320.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 5, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the east , please .
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: maybe something in the expensive range .
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: yu garden is located at 529 Newmarket Road Fen Ditton . Its phone number is 01223248882 and the postcode is cb58pa . is there anything else i can help you with ?usr: bye. thank you.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'WOZ20320.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 5, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the east , please .
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: maybe something in the expensive range .
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: yu garden is located at 529 Newmarket Road Fen Ditton . Its phone number is 01223248882 and the postcode is cb58pa . is there anything else i can help you with ?usr: bye. thank you.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'WOZ20320.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 5, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the east , please .
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: maybe something in the expensive range .
+sys: the missing sock is located at Finders Corner Newmarket Road . Its phone number is 01223812660 and the postcode is cb259aq . is there anything else i can help you with ?
+usr: sorry, please find me an expensive in the east.
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: yu garden is located at 529 Newmarket Road Fen Ditton . Its phone number is 01223248882 and the postcode is cb58pa . is there anything else i can help you with ?usr: bye. thank you.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'WOZ20320.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 5, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the east , please .
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: maybe something in the expensive range .
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: yu garden is located at 529 Newmarket Road Fen Ditton . Its phone number is 01223248882 and the postcode is cb58pa . is there anything else i can help you with ?usr: bye. thank you.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'WOZ20320.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 5, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the east , please .
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: maybe something in the expensive range .
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: yu garden is located at 529 Newmarket Road Fen Ditton . Its phone number is 01223248882 and the postcode is cb58pa . is there anything else i can help you with ?usr: bye. thank you.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt wrong

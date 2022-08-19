@@ -1,0 +1,120 @@
+# sys_agent
+goal = {'id': 'SSNG0020.json', 
+        'info_first_choice': {'pricerange': 'moderate', 'area': 'east'}, 
+        'first_choice_match': 3,
+        'info_second_choice': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'cur_info': {'pricerange': 'moderate', 'area': 'east'}, 
+        'book_first_choice': {'people': '7', 'day': 'tuesday', 'time': '18:15'}, 
+        'book_second_choice': {'time': '19:15'}, 
+        'cur_book': {'people': '7', 'day': 'tuesday', 'time': '18:15'}}
+usr: could you help me find an moderate restaurant please ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i would prefer the east area please
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sorry, maybe the centre of town is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: or how about an expensive restaurant instead?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 7 people on tuesday?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i want it to be at 18:15.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0020.json', 
+        'info_first_choice': {'pricerange': 'moderate', 'area': 'east'}, 
+        'first_choice_match': 3,
+        'info_second_choice': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'cur_info': {'pricerange': 'moderate', 'area': 'east'}, 
+        'book_first_choice': {'people': '7', 'day': 'tuesday', 'time': '18:15'}, 
+        'book_second_choice': {'time': '19:15'}, 
+        'cur_book': {'people': '7', 'day': 'tuesday', 'time': '18:15'}}
+usr: could you help me find an moderate restaurant please ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i would prefer the east area please
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sorry, maybe the centre of town is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: or how about an expensive restaurant instead?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 7 people on tuesday?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i want it to be at 18:15.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0020.json', 
+        'info_first_choice': {'pricerange': 'moderate', 'area': 'east'}, 
+        'first_choice_match': 3,
+        'info_second_choice': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'cur_info': {'pricerange': 'moderate', 'area': 'east'}, 
+        'book_first_choice': {'people': '7', 'day': 'tuesday', 'time': '18:15'}, 
+        'book_second_choice': {'time': '19:15'}, 
+        'cur_book': {'people': '7', 'day': 'tuesday', 'time': '18:15'}}
+usr: could you help me find an moderate restaurant please ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i would prefer the east area please
+sys: pizza hut cherry hinton is located at G4 Cambridge Leisure Park Clifton Way Cherry Hinton . Its phone number is 01223323737 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: sorry, maybe the centre of town is better.
+sys: pizza hut cherry hinton is located at G4 Cambridge Leisure Park Clifton Way Cherry Hinton . Its phone number is 01223323737 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: I want to find an expensive restaurant located in the centre of town instead?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 7 people on tuesday?
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0020.json', 
+        'info_first_choice': {'pricerange': 'moderate', 'area': 'east'}, 
+        'first_choice_match': 3,
+        'info_second_choice': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'cur_info': {'pricerange': 'moderate', 'area': 'east'}, 
+        'book_first_choice': {'people': '7', 'day': 'tuesday', 'time': '18:15'}, 
+        'book_second_choice': {'time': '19:15'}, 
+        'cur_book': {'people': '7', 'day': 'tuesday', 'time': '18:15'}}
+usr: could you help me find an moderate restaurant please ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i would prefer the east area please
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sorry, maybe the centre of town is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: or how about an expensive restaurant instead?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 7 people on tuesday?
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i want to make a reservation for 7 people on tuesday at 18:15.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0020.json', 
+        'info_first_choice': {'pricerange': 'moderate', 'area': 'east'}, 
+        'first_choice_match': 3,
+        'info_second_choice': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'cur_info': {'pricerange': 'moderate', 'area': 'east'}, 
+        'book_first_choice': {'people': '7', 'day': 'tuesday', 'time': '18:15'}, 
+        'book_second_choice': {'time': '19:15'}, 
+        'cur_book': {'people': '7', 'day': 'tuesday', 'time': '18:15'}}
+usr: could you help me find an moderate restaurant please ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i would prefer the east area please
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sorry, maybe the centre of town is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: or how about an expensive restaurant instead?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 7 people on tuesday?
+sys: Could you please tell me what time you would like for the reservation?
+usr: i want it to be at 18:15.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt|gpt_sl wrong

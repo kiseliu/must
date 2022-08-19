@@ -1,0 +1,71 @@
+# sys_agent
+goal = {'id': 'SSNG0167.json', 
+        'cur_info': {'name': 'graffiti'}, 
+        'first_choice_match': 1,
+        'book_first_choice': {'people': '2', 'day': 'wednesday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '2', 'day': 'wednesday', 'time': '13:00'}}
+usr: hi . have you heard of graffiti by chance ? i may want to eat there soon .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 2 people at 13:00 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0167.json', 
+        'cur_info': {'name': 'graffiti'}, 
+        'first_choice_match': 1,
+        'book_first_choice': {'people': '2', 'day': 'wednesday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '2', 'day': 'wednesday', 'time': '13:00'}}
+usr: hi . have you heard of graffiti by chance ? i may want to eat there soon .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 2 people at 13:00 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0167.json', 
+        'cur_info': {'name': 'graffiti'}, 
+        'first_choice_match': 1,
+        'book_first_choice': {'people': '2', 'day': 'wednesday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '2', 'day': 'wednesday', 'time': '13:00'}}
+usr: hi . have you heard of graffiti by chance ? i may want to eat there soon .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 2 people at 13:00 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0167.json', 
+        'cur_info': {'name': 'graffiti'}, 
+        'first_choice_match': 1,
+        'book_first_choice': {'people': '2', 'day': 'wednesday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '2', 'day': 'wednesday', 'time': '13:00'}}
+usr: hi . have you heard of graffiti by chance ? i may want to eat there soon .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 2 people at 13:00 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0167.json', 
+        'cur_info': {'name': 'graffiti'}, 
+        'first_choice_match': 1,
+        'book_first_choice': {'people': '2', 'day': 'wednesday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '2', 'day': 'wednesday', 'time': '13:00'}}
+usr: hi . have you heard of graffiti by chance ? i may want to eat there soon .
+sys: graffiti is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 2 people at 13:00 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# result: same

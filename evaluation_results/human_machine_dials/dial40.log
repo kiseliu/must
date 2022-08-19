@@ -1,0 +1,97 @@
+# sys_agent
+goal = {'id': 'SSNG0096.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '7', 'day': 'thursday', 'time': '11:45'}, 
+        'book_second_choice': {'time': '12:45'}, 
+        'cur_book': {'people': '7', 'day': 'thursday', 'time': '11:45'}}
+usr: i am looking for a cheap restaurant to have a meal .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer portuguese food , please !
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, can you change one? i want to dine in the centre .
+sys: nandos city centre is a portuguese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 11:45 on thursday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, sorry, i want it to be at 12:45.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0096.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '7', 'day': 'thursday', 'time': '11:45'}, 
+        'book_second_choice': {'time': '12:45'}, 
+        'cur_book': {'people': '7', 'day': 'thursday', 'time': '11:45'}}
+usr: i am looking for a cheap restaurant to have a meal .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer portuguese food , please !
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, can you change one? i want to dine in the centre .
+sys: nandos city centre is a portuguese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 11:45 on thursday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, sorry, i want it to be at 12:45.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0096.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '7', 'day': 'thursday', 'time': '11:45'}, 
+        'book_second_choice': {'time': '12:45'}, 
+        'cur_book': {'people': '7', 'day': 'thursday', 'time': '11:45'}}
+usr: i am looking for a cheap restaurant to have a meal .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer portuguese food , please !
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, can you change one? i want to dine in the centre .
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0096.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '7', 'day': 'thursday', 'time': '11:45'}, 
+        'book_second_choice': {'time': '12:45'}, 
+        'cur_book': {'people': '7', 'day': 'thursday', 'time': '11:45'}}
+usr: i am looking for a cheap restaurant to have a meal .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer portuguese food , please !
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, can you change one? i want to dine in the centre .
+sys: nandos city centre is a portuguese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 11:45 on thursday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, sorry, i want it to be at 12:45.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0096.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '7', 'day': 'thursday', 'time': '11:45'}, 
+        'book_second_choice': {'time': '12:45'}, 
+        'cur_book': {'people': '7', 'day': 'thursday', 'time': '11:45'}}
+usr: i am looking for a cheap restaurant to have a meal .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer portuguese food , please !
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, can you change one? i want to dine in the centre .
+sys: nandos city centre is a portuguese restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 11:45 on thursday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, sorry, i want it to be at 12:45.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt wrong

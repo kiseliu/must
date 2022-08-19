@@ -1,0 +1,81 @@
+# sys_agent
+goal = {'id': 'SNG0489.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'north'}, 
+        'cur_book': {'time': '13:45', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 5}
+usr: i am looking for a restaurant , something expensive priced .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find somewhere to eat in the north ?
+sys: restaurant two two is a french restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 4 people?
+sys: Could you please tell me what day and time you would like for the reservation?
+usr: saturday at 13:45 .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, that's great. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG0489.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'north'}, 
+        'cur_book': {'time': '13:45', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 5}
+usr: i am looking for a restaurant , something expensive priced .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find somewhere to eat in the north ?
+sys: restaurant two two is a french restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 4 people?
+sys: Could you please tell me what day and time you would like for the reservation?
+usr: saturday at 13:45 .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, that's great. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG0489.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'north'}, 
+        'cur_book': {'time': '13:45', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 5}
+usr: i am looking for a restaurant , something expensive priced .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find somewhere to eat in the north ?
+sys: restaurant two two is a french restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 4 people?
+sys: restaurant two two is located at 22 Chesterton Road Chesterton . Its phone number is 01223351880 and the postcode is cb43ax . is there anything else i can help you with ?
+usr: can you help me to make a reservation at 13:45 on saturday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, that's great. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG0489.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'north'}, 
+        'cur_book': {'time': '13:45', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 5}
+usr: i am looking for a restaurant , something expensive priced .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find somewhere to eat in the north ?
+sys: restaurant two two is a french restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 4 people?
+sys: hakka is a chinese restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 13:45 on saturday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, that's great. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG0489.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'north'}, 
+        'cur_book': {'time': '13:45', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 5}
+usr: i am looking for a restaurant , something expensive priced .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me find somewhere to eat in the north ?
+sys: restaurant two two is a french restaurant on the north side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 4 people?
+sys: Could you please tell me what day and time you would like for the reservation?
+usr: saturday at 13:45 .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, that's great. bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt|gpt_sl wrong

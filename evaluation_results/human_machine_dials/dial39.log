@@ -1,0 +1,95 @@
+# sys_agent
+goal = {'id': 'SSNG0063.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '5', 'day': 'friday', 'time': '16:00'}, 
+        'book_second_choice': {'time': '17:00'}, 
+        'cur_book': {'people': '5', 'day': 'friday', 'time': '16:00'}}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i forgot. i would like asian oriental food .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0063.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '5', 'day': 'friday', 'time': '16:00'}, 
+        'book_second_choice': {'time': '17:00'}, 
+        'cur_book': {'people': '5', 'day': 'friday', 'time': '16:00'}}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i forgot. i would like asian oriental food .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0063.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '5', 'day': 'friday', 'time': '16:00'}, 
+        'book_second_choice': {'time': '17:00'}, 
+        'cur_book': {'people': '5', 'day': 'friday', 'time': '16:00'}}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i forgot. i would like asian oriental food .
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0063.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '5', 'day': 'friday', 'time': '16:00'}, 
+        'book_second_choice': {'time': '17:00'}, 
+        'cur_book': {'people': '5', 'day': 'friday', 'time': '16:00'}}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i forgot. i would like asian oriental food .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: i mean I want to find a asian oriental restaurant in the centre.
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0063.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '5', 'day': 'friday', 'time': '16:00'}, 
+        'book_second_choice': {'time': '17:00'}, 
+        'cur_book': {'people': '5', 'day': 'friday', 'time': '16:00'}}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i forgot. i would like asian oriental food .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: i mean I want to find a asian oriental restaurant in the centre.
+sys: dojo noodle bar is a asian oriental restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would like a table at 16:00 on friday for 5 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: gpt_sl|gpt_must wrong

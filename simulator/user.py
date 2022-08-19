@@ -415,8 +415,11 @@ class User(object):
         self.env = env
         self.sys = sys
 
-    def initialize_episode(self):
+    def initialize_episode(self, goal_id=None):
         goal, goal_templates = self.goal_generator.generate_initial_goal()
+
+        while goal_id and goal['id'] != goal_id:
+            goal, _ = self.goal_generator.generate_initial_goal()
         self.goal = goal
         self._set_initial_state()
         self.fail_reason = ''
@@ -543,14 +546,14 @@ class User(object):
                 match_list.append(restaurant)
         return match_list
 
-    def reset(self):
+    def reset(self, goal_id=None):
         """
         clean up the memory and come up with a new starting entity
         <d>, <a>, <time>, <uncovered_d>, <uncovered_a>
         self.user_action = self.user.reset()
         :return:
         """
-        self.initialize_episode()
+        self.initialize_episode(goal_id=goal_id)
         self.first_utt = True
 
         self.INITIAL_STATE = random.choice([6, 7, 9], size=1)[0]

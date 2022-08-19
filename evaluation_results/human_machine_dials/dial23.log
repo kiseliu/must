@@ -1,0 +1,109 @@
+# sys_agent
+goal = {'id': 'SNG1353.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4,
+        'cur_book': {'people': '8', 'day': 'saturday', 'time': '12:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: then find an expensive one.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sorry, i want chinese food.
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, I want to book a table.
+sys: tang chinese is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: I want to make a reservation.
+sys: tang chinese is located at Napier Street City Centre . Its phone number is 01223357187 and the postcode is cb11hr . is there anything else i can help you with ?
+usr: I want to make a reservation on saturday.
+sys: Could you please tell me how many people and what time you would like for the reservation?
+usr: for 8 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: can you help me to make a reservation on 12:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG1353.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4,
+        'cur_book': {'people': '8', 'day': 'saturday', 'time': '12:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: then find an expensive one.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sorry, i want chinese food.
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, I want to book a table.
+sys: Could you please tell me how many people and what day and time you would like for the reservation?
+usr: I want to make a reservation on saturday.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: can you help me to make a reservation on 12:30 for 8 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG1353.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4,
+        'cur_book': {'people': '8', 'day': 'saturday', 'time': '12:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: then find an expensive one.
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, i want to fine an expensive restaurant that serves chinese food.
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, I want to book a table.
+sys: ugly duckling is located at 12 St. Johns Street City Centre . Its phone number is 012323323737 and the postcode is cb21tw . is there anything else i can help you with ?
+usr: I want to make a reservation.
+sys: ugly duckling is located at 12 St. Johns Street City Centre . Its phone number is 012323323737 and the postcode is cb21tw . is there anything else i can help you with ?
+usr: I want to make a reservation on saturday.
+sys: ugly duckling is located at 12 St. Johns Street City Centre . Its phone number is 012323323737 and the postcode is cb21tw . is there anything else i can help you with ?
+usr: can you help me to make a reservation at 12:30 for 8 people on saturday.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG1353.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4,
+        'cur_book': {'people': '8', 'day': 'saturday', 'time': '12:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: then find an expensive one.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sorry, i want chinese food.
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, I want to book a table.
+sys: tang chinese is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: I want to make a reservation.
+sys: tang chinese is located at Napier Street City Centre . Its phone number is 01223357187 and the postcode is cb11hr . is there anything else i can help you with ?
+usr: I want to make a reservation on saturday.
+sys: hk fusion is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 12:30 for 8 people on saturday.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG1353.json', 
+        'cur_info': {'food': 'chinese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 4,
+        'cur_book': {'people': '8', 'day': 'saturday', 'time': '12:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: then find an expensive one.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sorry, i want chinese food.
+sys: ugly duckling is a chinese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, I want to book a table.
+sys: Could you please tell me how many people and what day and time you would like for the reservation?
+usr: I want to make a reservation on saturday.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: can you help me to make a reservation on 12:30 for 8 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# result: agent|rnnt|gpt_sl wrong

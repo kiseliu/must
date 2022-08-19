@@ -1,0 +1,87 @@
+# sys_agent
+goal = {'id': 'SSNG0185.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '14:45'}, 
+        'book_second_choice': {'day': 'friday'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '14:45'}}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i think modern european may have caught my attention .
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:45 on thursday.
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0185.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '14:45'}, 
+        'book_second_choice': {'day': 'friday'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '14:45'}}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i think modern european may have caught my attention .
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:45 on thursday.
+sys: Could you please tell me how many people you would like for the reservation?
+usr: just book a table for 1 people, please.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, can you help me to make a reservation on friday?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0185.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '14:45'}, 
+        'book_second_choice': {'day': 'friday'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '14:45'}}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i think modern european may have caught my attention .
+sys: pizza hut cherry hinton is located at G4 Cambridge Leisure Park Clifton Way Cherry Hinton . Its phone number is 01223323737 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0185.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '14:45'}, 
+        'book_second_choice': {'day': 'friday'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '14:45'}}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i think modern european may have caught my attention .
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:45 on thursday.
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0185.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '14:45'}, 
+        'book_second_choice': {'day': 'friday'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '14:45'}}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i think modern european may have caught my attention .
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:45 on thursday.
+sys: Could you please tell me how many people you would like for the reservation?
+usr: just book a table for 1 people, please.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, can you help me to make a reservation on friday?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: agent|rnnt|gpt_sl wrong

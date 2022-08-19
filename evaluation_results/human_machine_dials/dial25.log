@@ -1,0 +1,92 @@
+# sys_agent
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 8 people at 11:30?
+sys: Could you please tell me what day you would like for the reservation?
+usr: yes, this wednesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 8 people at 11:30?
+sys: Could you please tell me what day you would like for the reservation?
+usr: yes, this wednesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: restaurant alimentum is located at 152 - 154 Hills Road . Its phone number is 01223413000 and the postcode is cb28pb . is there anything else i can help you with ?
+usr: sorry, could you find me another restaurant?
+sys: restaurant alimentum is located at 152 - 154 Hills Road . Its phone number is 01223413000 and the postcode is cb28pb . is there anything else i can help you with ?
+usr: ok, can you help me to make a reservation for 8 people at 11:30?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 8 people at 11:30?
+sys: riverside brasserie is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: yes, can you help me to make a reservation for 8 people at 11:30?
+sys: I'm sorry, there is no other restaurant matching your request.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 8 people at 11:30?
+sys: Could you please tell me what day you would like for the reservation?
+usr: yes, this wednesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you. bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: rnnt|gpt_sl wrong                 but with zhengyi

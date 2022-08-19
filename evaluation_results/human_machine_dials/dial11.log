@@ -1,0 +1,71 @@
+# sys_agent
+goal = {'id': 'WOZ20109.json', 
+        'cur_info': {'food': 'mediterranean', 'pricerange': 'expensive'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an mediterranean place to dine in . i need it to be expensive .
+sys: la mimosa is a mediterranean restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: also I want its address?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'WOZ20109.json', 
+        'cur_info': {'food': 'mediterranean', 'pricerange': 'expensive'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an mediterranean place to dine in . i need it to be expensive .
+sys: la mimosa is a mediterranean restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: also I want its address?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'WOZ20109.json', 
+        'cur_info': {'food': 'mediterranean', 'pricerange': 'expensive'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an mediterranean place to dine in . i need it to be expensive .
+sys: la mimosa is a mediterranean restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: also I want its address?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'WOZ20109.json', 
+        'cur_info': {'food': 'mediterranean', 'pricerange': 'expensive'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an mediterranean place to dine in . i need it to be expensive .
+sys: la mimosa is a mediterranean restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: also I want its address?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'WOZ20109.json', 
+        'cur_info': {'food': 'mediterranean', 'pricerange': 'expensive'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an mediterranean place to dine in . i need it to be expensive .
+sys: la mimosa is a mediterranean restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: also I want its address?
+sys: la mimosa is located at Thompsons Lane Fen Ditton . Its phone number is 01223362525 and the postcode is cb58aq . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# result: same

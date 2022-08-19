@@ -1,0 +1,103 @@
+# sys_agent
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: tandoori palace is a indian restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: and it should be in the moderate price range.
+sys: meghna is a indian restaurant on the west side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday for 7 people.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 15:00?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: tandoori palace is a indian restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: and it should be in the moderate price range.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: sorry, I want to find a moderate restaurant in the west that serves indian food.
+sys: meghna is a indian restaurant on the west side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: taj tandoori is a indian restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: agenr|rnnt|gpt_sl|gpt_must wrong

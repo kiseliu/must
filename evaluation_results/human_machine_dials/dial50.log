@@ -1,0 +1,91 @@
+# sys_agent
+goal = {'id': 'SSNG0151.json', 
+        'info_first_choice': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 15,
+        'info_second_choice': {'pricerange': 'moderate'}, 
+        'cur_info': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'book_first_choice': {'people': '4', 'day': 'sunday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '4', 'day': 'sunday', 'time': '13:00'}}
+usr: could you help me find an cheap restaurant in the centre?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, a moderate restaurant is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 13:00 on sunday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_agenr
+goal = {'id': 'SSNG0151.json', 
+        'info_first_choice': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 15,
+        'info_second_choice': {'pricerange': 'moderate'}, 
+        'cur_info': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'book_first_choice': {'people': '4', 'day': 'sunday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '4', 'day': 'sunday', 'time': '13:00'}}
+usr: could you help me find an cheap restaurant in the centre?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, a moderate restaurant is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 13:00 on sunday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_rnnt
+goal = {'id': 'SSNG0151.json', 
+        'info_first_choice': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 15,
+        'info_second_choice': {'pricerange': 'moderate'}, 
+        'cur_info': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'book_first_choice': {'people': '4', 'day': 'sunday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '4', 'day': 'sunday', 'time': '13:00'}}
+usr: could you help me find an cheap restaurant in the centre?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, a moderate restaurant is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 13:00 on sunday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_sl
+goal = {'id': 'SSNG0151.json', 
+        'info_first_choice': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 15,
+        'info_second_choice': {'pricerange': 'moderate'}, 
+        'cur_info': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'book_first_choice': {'people': '4', 'day': 'sunday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '4', 'day': 'sunday', 'time': '13:00'}}
+usr: could you help me find an cheap restaurant in the centre?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, a moderate restaurant is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 13:00 on sunday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_must
+goal = {'id': 'SSNG0151.json', 
+        'info_first_choice': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'first_choice_match': 15,
+        'info_second_choice': {'pricerange': 'moderate'}, 
+        'cur_info': {'pricerange': 'cheap', 'area': 'centre'}, 
+        'book_first_choice': {'people': '4', 'day': 'sunday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '4', 'day': 'sunday', 'time': '13:00'}}
+usr: could you help me find an cheap restaurant in the centre?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sorry, a moderate restaurant is better.
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation at 13:00 on sunday for 4 people?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# result: same

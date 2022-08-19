@@ -186,12 +186,12 @@ class Enviroment(object):
 
         return zero_dialog_state
 
-    def reset(self, mode, mturk_res=None):
+    def reset(self, mode, goal_id=None, mturk_res=None):
         # state = env.reset()
         self.done = False
         self.success = None
         self.first_step = True
-        self.user.reset()
+        self.user.reset(goal_id=goal_id)
         self.system.reset()
 
         self.step_i = 0
