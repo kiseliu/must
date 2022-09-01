@@ -218,8 +218,8 @@ class DataProcessor(object):
         df = pd.read_csv(self.f_path + 'train_no.csv')
         self.df = df
         self._build_labelEncoder()
-        print(df.head(2))
-        print(df.columns)
+        # print(df.head(2))
+        # print(df.columns)
 
         # Define field
         TEXT = data.Field(sequential=True, tokenize=tokenizer, use_vocab=True, lower=True, # eos_token='<EOS>',
@@ -300,12 +300,12 @@ class DataProcessor(object):
         #     HIS.vocab.load_vectors(vectors='fasttext.en.300d')
         #     TEXT.build_vocab(train,valid,test)#, vectors=vectors, max_size=300000)
 
-        print('num of tokens', len(TEXT.vocab.itos))
+        # print('num of tokens', len(TEXT.vocab.itos))
 
-        print('most common', TEXT.vocab.freqs.most_common(5))
+        # print('most common', TEXT.vocab.freqs.most_common(5))
 
-        print('len(train)', len(train))
-        print('len(test)', len(test))
+        # print('len(train)', len(train))
+        # print('len(test)', len(test))
 
         self.train_iter = data.Iterator(dataset=train, batch_size=config.batch_size, train=True, sort_key=lambda x: len(x.utt),
                                    sort_within_batch=False, repeat=False,

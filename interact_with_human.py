@@ -1,4 +1,5 @@
 import random
+import os
 from tqdm import tqdm
 from beeprint import pp
 
@@ -268,6 +269,61 @@ def interact(env, rl_model_dir, goal_id):
     assert len(pg_reinforce.reward_buffer) == 0
     run_one_dialog(env, pg_reinforce, goal_id)
 
+def compute_succ_rate():
+    agent = [0, 0]
+    agenr = [0, 0]
+    rnnt = [0, 0]
+    gpt_sl = [0, 0]
+    gpt_must = [0, 0]
+    def extract_res(path):
+        data = open(path, 'r').read().split('\n')
+        for line in data:
+            if line.startswith('# result'):
+                return [path[-6:], line]
+        return None
+
+    dir_path = 'evaluation_results/human_machine_dials/'
+    idx = []
+    for f in os.listdir(dir_path):
+        if f.startswith('dial'):
+            f_path = dir_path + f
+            # print(f_path)
+            res = extract_res(f_path)
+            if res:
+                idx.append(res)
+
+    idx_order = sorted(idx, key=lambda x: x[0])
+    for l in idx_order:
+        line = ' '.join(l)
+        if 'all wrong' in line:
+            agent[1]+=1
+            agenr[1]+=1
+            rnnt[1]+=1
+            gpt_sl[1]+=1
+            gpt_must[1]+=1
+        elif 'wrong' in line:
+            if 'agent' in line:
+                agent[1]+=1
+            
+            if 'agenr' in line:
+                agenr[1]+=1
+            
+            if 'rnnt' in line:
+                rnnt[1]+=1
+
+            if 'gpt_sl' in line:
+                gpt_sl[1]+=1
+
+            if 'gpt_must' in line:
+                gpt_must[1]+=1
+    
+    print('agent = ', agent, (50-agent[1])/50)
+    print('agenr = ', agenr, (50-agenr[1])/50)
+    print('rnnt = ', rnnt, (50-rnnt[1])/50)
+    print('gpt_sl = ', gpt_sl, (50-gpt_sl[1])/50)
+    print('gpt_must = ', gpt_must, (50-gpt_must[1])/50)
+
+
 if __name__ == '__main__':
     goal_ids = ['WOZ20421.json', 'SNG02248.json', 'WOZ20528.json', 'WOZ20650.json', 'WOZ20452.json', 
                 'WOZ20225.json', 'WOZ20337.json', 'WOZ20208.json', 'WOZ20320.json', 'SNG0665.json', 
@@ -297,3 +353,6 @@ if __name__ == '__main__':
     goal_idx = 0
     
     interact(env, sys_models[sys_idx], goal_ids[goal_idx])
+
+    # compute the results of human evaluations
+    compute_succ_rate()

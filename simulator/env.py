@@ -197,12 +197,12 @@ class Enviroment(object):
         self.step_i = 0
         self.last_sys_act, self.last_sys_sent = None, None
 
-        print("goal: ")
-        pp(self.user.goal)
+        # print("goal: ")
+        # pp(self.user.goal)
         # first user sentence
-        next_state = self.step_user(mode=mode, mturk_res=mturk_res)
+        next_state, turn = self.step_user(mode=mode, mturk_res=mturk_res)
 
-        return next_state
+        return self.user.goal, next_state, turn
         # if config.INTERACTIVE:
         #     self.last_usr_sent = input('Please respond: ')
         #     self.last_usr_act_true = None
@@ -322,20 +322,22 @@ class Enviroment(object):
         :return:
         """
         result_step_sys = self.step_system(provided_sys_act=provided_sys_act, mode=mode)
-        if result_step_sys is not None:
+        if len(result_step_sys) > 2:
             # goes into FAILED_DIALOG, shouldn't happen in rule_policy and INTERACTIVE mode
             next_state, reward, self.done = result_step_sys
             print('reward per turn', reward)
             return next_state, reward, self.done
 
-        next_state, reward, self.done = self.step_user(mode=mode)
+        next_state, reward, self.done, turn = self.step_user(mode=mode)
+        turn['sys_act'], turn['sys_resp'] = result_step_sys
         print('reward per turn', reward)
-        return next_state, reward, self.done
+        return next_state, reward, self.done, turn
 
     def step_user(self, mode, mturk_res=None):
         import pdb
         # pdb.set_trace()
         # first user sentence
+        turn = {}
         if self.config.INTERACTIVE:
             if mturk_res is None:
                 self.last_usr_sent = input('Please respond: ')
@@ -355,6 +357,8 @@ class Enviroment(object):
         if self.verbose and (not self.config.INTERACTIVE):
             print("{} Usr: {}".format(self.step_i, self.last_usr_sent))
             print("True user act: ", self.last_usr_act_true)
+            turn['usr_act'] = self.last_usr_act_true
+            turn['usr_utter'] = self.last_usr_sent
 
         if not self.config.use_sequicity_for_rl_model:
             next_state = self.system.prepare_state_representation()
@@ -363,7 +367,7 @@ class Enviroment(object):
 
         if self.first_step:
             self.first_step = False
-            return next_state
+            return next_state, turn
 
         if not self.config.INTERACTIVE:
             # next_state = self.system.prepare_state_representation()
@@ -372,7 +376,7 @@ class Enviroment(object):
             else:
                 reward = self.evaluate_cur_move()
 
-            return next_state, reward, self.done
+            return next_state, reward, self.done, turn
         else:
             # next_state = self.system.prepare_state_representation()
             reward = 0
@@ -411,7 +415,7 @@ class Enviroment(object):
         # user's next response to the current system act
         self.step_i += 1
 
-        return None
+        return self.last_sys_act, self.last_sys_sent
 
     def evaluate_cur_move(self):
 

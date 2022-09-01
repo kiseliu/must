@@ -2,3 +2,6 @@ __pycache__
 evaluation_results/cross_test/*
 sequicity_user/log/*
 log/*
+simulator_gpt_act/models/*
+*.log
+test.py
