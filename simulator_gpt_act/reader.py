@@ -544,7 +544,7 @@ class User_Simulator_Reader(_ReaderBase):
         text = re.sub('\'\s', ' ', text)
         text = re.sub('\s\'', ' ', text)
 
-        fin = open('./data/multi-woz/mapping.pair')
+        fin = open('./simulator/multiwoz_utils/utils/mapping.pair')
         replacements = []
         for line in fin.readlines():
             tok_from, tok_to = line.replace('\n', '').split('\t')
@@ -633,7 +633,7 @@ class User_Simulator_Reader(_ReaderBase):
         response = self.normalize(response)
 
         # # replace info in db
-        db_entity_file = open('data/multi-woz/db_entity_file.pkl','rb')
+        db_entity_file = open('data/multiwoz-master/db_entity_file.pkl','rb')
         db_entity_list = pickle.load(db_entity_file)
         db_entity_file.close()
         response = self.delexicalise(response, db_entity_list)

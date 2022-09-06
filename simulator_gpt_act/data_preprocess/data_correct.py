@@ -6,7 +6,6 @@ for _ in range(3):
     root_path = os.path.dirname(root_path)
 sys.path.append(root_path)
 
-import re
 import json
 import pandas as pd
 from pprint import pprint
@@ -64,8 +63,11 @@ def extract_dials(usr_act_data, usr_data, sys_data):
 
 
 def extract_uda_slots():
+    dials = extract_dials(usr_act_data, usr_data, sys_data)
+    new_dials = utils.add_dial_id(dials, usr_act_label)  # add dial_id, goal to dials
+
+    # extract all dial slots & process restaurant_name and restaurant_address
     dial_slots = {}
-    # keep slot consistent
     for items in usr_act_label.values:
         dial_id, char, sent, label_slots = items[1], items[2], items[3], items[4]
         
@@ -86,62 +88,14 @@ def extract_uda_slots():
             intent, slots = '', []
         dial_slots[dial_id].append([new_sent, intent, slots])
 
-    dials = extract_dials(usr_act_data, usr_data, sys_data)
-    assert len(dials) == len(dial_slots)
-    new_dials = utils.add_dial_id(dials, usr_act_label)
+    assert len(new_dials) == len(dial_slots)
+    # keep slots consistent
     new_dials = utils.correct_uda(new_dials, dial_slots)
 
     new_dials = clean_text(new_dials)
-    with open('data/multiwoz-master/data/multi-woz/mwz_restaurant_with_annatated_da.json', 'w', encoding='utf-8') as fw:
+    with open('data/multiwoz-master/data/multi-woz/rest_usr_simulator_goal_mwz.json', 'w', encoding='utf-8') as fw:
         json.dump(new_dials, fw, indent=2)
     return new_dials
         
 
-# all_dial_slots = extract_uda_slots()
-
-
-def print_act_dist(path):
-    act_seq_dict = {}
-    act_seq_list = {}
-
-    data = json.loads(open(path, 'r', encoding='utf-8').read())
-    for line in data:
-        dials = line.get('dials')
-
-        act_list = []
-        for turn in dials:
-            sys_act = turn.get('sys_act')
-            sys_intent = ' '.join(list(set([act.get('act') for act in sys_act]))).lower() if sys_act else ''
-
-            usr_act = turn.get('usr_act')
-            usr_intent = str(list(usr_act.keys())) if usr_act else ''
-
-            # act_list.append(sys_intent)
-            act_list.append(usr_intent)
-
-        if not act_list:
-            continue
-
-        # print('act_list =', act_list)
-        if ' '.join(act_list) not in act_seq_dict:
-            act_seq_dict[' '.join(act_list)] = 0
-            act_seq_list[' '.join(act_list)] = []
-        act_seq_dict[' '.join(act_list)] += 1
-        act_seq_list[' '.join(act_list)].append(line.get('ids'))
-            # uda = turn.get('usr_da').strip().lower()
-            # if uda in ['inform_type', 'inform_type_change']:
-            #     if 'request' in usr_act:
-            #         pprint(dials)
-            
-            # if uda in ['ask_info']:
-            #     if 'inform' in usr_act:
-            #         print(line.get('ids'))
-            #         pprint(dials)
-            # print(uda, usr_act)
-        # print(act_list[-1])
-        # if act_list[-1] in ["['inform_type']", "['inform_type_change']"]:
-        #     print(line.get('ids'))
-    # pprint(act_seq_dict)
-    # pprint(act_seq_list)
-
-# print_act_dist('data/multiwoz-master/data/multi-woz/mwz_restaurant_with_annatated_da.json')
+all_dial_slots = extract_uda_slots()

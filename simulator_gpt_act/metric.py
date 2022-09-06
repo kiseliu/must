@@ -298,6 +298,8 @@ class CamRestEvaluator(GenericEvaluator):
                 gen_response_token = turn['generated_response'].split()
                 response_token = turn['response'].split()
                 for idx, w in enumerate(gen_response_token):
+                    if w == '[goodbye]':
+                        continue
                     if w.startswith('[') and w.endswith(']'):
                         gen_req.add(w[1:-1].split('_')[1])
                 for idx, w in enumerate(response_token):

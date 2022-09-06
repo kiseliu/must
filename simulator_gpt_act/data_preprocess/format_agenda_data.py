@@ -2,6 +2,7 @@
 import sys
 sys.path.append('./')
 import json
+import random
 from copy import deepcopy
 from pprint import pprint
 
@@ -141,7 +142,7 @@ def extract_dials(dial):
     return new_dial
 
 
-def data_aug(path):
+def extract_agenda_data(path):
     all_dials = []
     at_at_data = json.loads(open(at_at_path, 'r', encoding='utf-8').read())
     at_ar_data = json.loads(open(at_ar_path, 'r', encoding='utf-8').read())
@@ -169,7 +170,6 @@ def data_aug(path):
             all_dials.append(tmp)
             # pprint(tmp)
 
-    import random
     random.shuffle(all_dials)
 
     print(len(all_dials))
@@ -177,4 +177,32 @@ def data_aug(path):
         json.dump(all_dials, fw, indent=4)
 
 
-data_aug('evaluation_results/simulated_agenda_dataset/rest_usr_simulator_goal_agenda.json')
+def extract_gpt_il_data(path):
+    mwz_data = json.loads(open('data/multiwoz-master/data/multi-woz/rest_usr_simulator_goal_mwz.json', 'r', encoding='utf-8').read())
+
+    def extract(data):
+        random.shuffle(data)
+
+        all_dials = []
+        for dial in data:
+            tmp = extract_dials(dial)
+            if tmp:
+                all_dials.append(tmp)
+            
+            if len(all_dials) > 499:
+                break
+        return all_dials
+
+    at_at_data = json.loads(open(at_at_path, 'r', encoding='utf-8').read())
+    ar_ar_data = json.loads(open(ar_ar_path, 'r', encoding='utf-8').read())
+    ag_ag_data = json.loads(open(ag_ag_path, 'r', encoding='utf-8').read())
+
+    all_dials = mwz_data + extract(at_at_data) + extract(ar_ar_data) + extract(ag_ag_data)
+    print(len(all_dials))
+    random.shuffle(all_dials)
+
+    with open(path, 'w', encoding='utf-8') as fw:
+        json.dump(all_dials, fw, indent=4)
+
+# extract_agenda_data('data/multiwoz-master/data/multi-woz/rest_usr_simulator_goal_agenda.json')
+extract_gpt_il_data('data/multiwoz-master/data/multi-woz/rest_usr_simulator_goal_gpt_il.json')

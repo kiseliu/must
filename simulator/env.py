@@ -191,7 +191,7 @@ class Enviroment(object):
         self.done = False
         self.success = None
         self.first_step = True
-        self.user.reset(goal_id=goal_id)
+        self.user.reset()
         self.system.reset()
 
         self.step_i = 0

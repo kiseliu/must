@@ -347,7 +347,7 @@ while True:
 
         print("-*-" * 20)
         # initialize
-        state = env.reset(mode=MODE)
+        _, state, _ = env.reset(mode=MODE)
         total_rewards = 0
         total_t = 0
 
@@ -362,7 +362,7 @@ while True:
                 action = action.item()
             elif MODE == dialog_config.RL_WARM_START:
                 action = None
-            next_state, reward, done = env.step(provided_sys_act=action, mode=MODE)
+            next_state, reward, done, _ = env.step(provided_sys_act=action, mode=MODE)
             total_rewards += reward
 
             if MODE == dialog_config.RL_WARM_START:

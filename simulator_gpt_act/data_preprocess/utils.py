@@ -29,10 +29,16 @@ def confirm_slot_type(utt, slots):
     for token in reqt:
         if token in utt:
             reqt_flag.append(token)
+    if 'Phone' in utt:
+        reqt_flag.append('phone')
     if 'reference' in utt and 'preference' not in utt:
+        reqt_flag.append('reference')
+    if 'reservation number' in utt:
         reqt_flag.append('reference')
     if 'post code' in utt:
         reqt_flag.append('postcode')
+    if 'some information on the place' in utt:
+        reqt_flag.append('address')
     return info_flag, book_flag, reqt_flag
 
 def is_nooffer_or_nobook(dial_id, turn):
@@ -81,6 +87,20 @@ def add_dial_id(dials, usr_act_label):
         # break
     return new_dials
 
+def process_rest_slot(dial_id, new_sent, label_slots):
+    intent = label_slots.lower().split('-')[0]
+    slots = label_slots.lower().split('-')[1:]
+
+    for idx, slot in enumerate(slots):
+        assert slot.startswith('restaurant_') or slot.startswith('value_')
+        if 'restaurant_name' in slot:
+            slots[idx] = 'value_name'
+            new_sent = new_sent.replace(slot, 'value_name')
+                
+        if 'restaurant_address' in slot:
+            slots[idx] = 'value_address'
+            new_sent = new_sent.replace(slot, 'value_address')
+    return new_sent, intent, slots
 
 def extract_slot(sent):
     tokens = re.findall(slot_pattern, sent)
@@ -93,22 +113,6 @@ def extract_slot(sent):
                 new_token = token[1:-1].split('|')[0]
             slots.append(new_token)
     return slots
-
-
-def process_rest_slot(dial_id, new_sent, label_slots):
-    intent = label_slots.lower().split('-')[0]
-    slots = label_slots.lower().split('-')[1:]
-
-    for idx, slot in enumerate(slots):
-        if 'restaurant_name' in slot:
-            slots[idx] = 'value_name'
-            new_sent = new_sent.replace(slot, 'value_name')
-                
-        if 'restaurant_address' in slot:
-            slots[idx] = 'value_address'
-            new_sent = new_sent.replace(slot, 'value_address')
-    return new_sent, intent, slots
-
 
 def process_slot_count(dial_id, utt, utt_delex, slots):
     extracted_slots = extract_slot(utt_delex)
@@ -589,6 +593,8 @@ def process_da_intent(dial_id, turn, ext_intent, slots, utt_delex):
                 else:
                     assert info_flag
                     correct_uda['inform_type'] = info_slots
+                    if dial_id in ['SNG0544.json', 'SNG0531.json']:
+                        correct_uda['ask_info'] = []
 
                 if reqt_flag:
                     correct_uda['ask_info'] = reqt_slots
@@ -598,9 +604,9 @@ def process_da_intent(dial_id, turn, ext_intent, slots, utt_delex):
 def correct_uda(dials, dials_slots):
     for dial_id in dials:
         dial = dials[dial_id]
-        log = dial['dials']
+        dial_turns = dial['dials']
         dial_slots = dials_slots[dial_id]
-        for t, (turn, turn_slot) in enumerate(zip(log, dial_slots)):
+        for t, (turn, turn_slot) in enumerate(zip(dial_turns, dial_slots)):
             # print('\n', t, '-----')
             # correct count label
             utt_delex, new_slots = process_slot_count(dial_id, turn['usr'], turn_slot[0], turn_slot[2])
@@ -613,7 +619,7 @@ def correct_uda(dials, dials_slots):
                 print('----')
             
             dials[dial_id]['dials'][t]['usr_act'] = correct_uda
-        # pprint(dials)
+        # pprint(dials[dial_id])
     return dials
 
 
@@ -651,7 +657,6 @@ def clean_text(data):
                 for j, act in enumerate(sys_act):
                     slots = act['slots']
                     for m, slot in enumerate(slots):
-                        
                         k = slot[0].strip().lower()
                         dials['dials'][i]['sys_act'][j]['slots'][m][0] = k
                         if k == 'area':
@@ -662,20 +667,41 @@ def clean_text(data):
                                     # print(dial_id, slots)
                                     pass
                                 elif 'north' in v:
-                                    dials['dials'][i]['sys_act'][j]['slots'][m][1] = 'north'
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'north'
                                 elif 'south' in v:
-                                    dials['dials'][i]['sys_act'][j]['slots'][m][1] = 'south'
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'south'
                                 elif 'east' in v:
-                                    dials['dials'][i]['sys_act'][j]['slots'][m][1] = 'east'
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'east'
                                 elif 'west' in v:
-                                    dials['dials'][i]['sys_act'][j]['slots'][m][1] = 'west'
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'west'
                                 elif 'center' in v or 'centre' in v or 'cetre' in v or v in ['centrally located']:
-                                    dials['dials'][i]['sys_act'][j]['slots'][m][1] = 'centre'
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'centre'
                                 elif v in ['all over the city', 'throughout the city', 'all of cambridge']:
-                                    dials['dials'][i]['sys_act'][j]['slots'][m][1] = 'any'
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'any'
                                 else:
                                     # print(dial_id, slots)
                                     pass
+                        elif k == 'price':
+                            for n, v in enumerate(slot[1:]):
+                                v = v.strip().lower()
+                                dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = v
+                                if v in ['cheap', 'moderate', 'expensive', 'cheap to expensive']:
+                                    # print(dial_id, slots)
+                                    pass
+                                elif 'cheap' in v:
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'cheap'
+                                elif 'moderate' in v or 'moderatre' in v or 'moderatly' in v or 'moderatley priced' in v:
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'moderate'
+                                elif 'quite expensive' in v or 'pretty expensive' in v or 'more expensive' in v or \
+                                    'most expensive' in v or 'very expensive' in v or 'a little expensive' in v or \
+                                    'expinsive' in v or 'epensive' in v:
+                                    dials['dials'][i]['sys_act'][j]['slots'][m][n+1] = 'expensive'
+                                elif 'expensive' in v :
+                                    pass
+                                elif v == 'vietnamese':
+                                    dials['dials'][i]['sys_act'][j]['slots'][m]=['food', 'vietnamese']
+                                else:
+                                    print(dial_id, k, n, v)
         data[d] = dials
         new_dials.append(dials)
     return new_dials

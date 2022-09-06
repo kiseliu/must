@@ -14,8 +14,8 @@ class Config(object):
 
     INTERACTIVE = False
 
-    device = 'cpu'#torch.device("cuda:6" if torch.cuda.is_available() else "cpu")#'cpu'#torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    use_gpu = False#torch.cuda.is_available()
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")#'cpu'#torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    use_gpu = torch.cuda.is_available()
 
     # user simulator
     nlg_sample = False
