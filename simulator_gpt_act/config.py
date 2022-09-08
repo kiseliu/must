@@ -1,6 +1,5 @@
 import logging
 import time
-import configparser
 
 class _Config:
     def __init__(self):
@@ -19,17 +18,17 @@ class _Config:
 
         self.split = (9, 1, 1)
         self.root_dir = "."
-        self.gpt_path = '/home/liuyajiao/pretrained-models/distilgpt2/'
-        # self.gpt_path = 'simulator_gpt_act/models/agenda/b4_g16_lr0.001/epoch50_trloss0.1173_gpt2'
+        # self.gpt_path = '/home/liuyajiao/pretrained-models/distilgpt2/'
+        self.gpt_path = 'simulator_gpt_act/models/agenda/b4_g16_lr0.001/epoch50_trloss0.1173_gpt2'
         # self.eval_gpt_path = './models/gpt/epoch18_trloss0.65_gpt2_0.003'
-        self.eval_gpt_path = './simulator_gpt_act/models/mwz/epoch47_trloss0.2544_gpt2'
+        self.eval_gpt_path = './simulator_gpt_act/models/mwz/b4_g16_lr0.001/epoch59_trloss0.2476_gpt2'
         self.model_path = self.root_dir + '/models/multi_woz_simulator911_goal.pkl'
         self.result_path = self.root_dir + '/results/multi_woz_simulator_gpt_oracle.csv'
         self.vocab_path = self.root_dir + '/vocab/vocab-multi_woz_simulator911_goal.pkl'
-        self.exp_path = './simulator_gpt_act/models/'
+        self.exp_path = './simulator_gpt_act/models/mwz/'
 
         # self.data = 'evaluation_results/simulated_agenda_dataset/rest_usr_simulator_goal_agenda.json'
-        self.data = 'data/multiwoz-master/data/multi-woz/mwz_restaurant_with_annatated_da.json'
+        self.data = 'data/multiwoz-master/data/multi-woz/rest_usr_simulator_goal_mwz.json'
         self.encoded_file_path = './data/multiwoz-master/user_simulator_mwz.json'
         self.entity = './data/multiwoz-master/data/multi-woz/rest_OTGY.json'
         self.db = './data/multiwoz-master/db/restaurant_db.json'

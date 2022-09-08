@@ -25,8 +25,11 @@ class Config(object):
     topk = 20
 
     # rl
-    n_episodes = 30000
-    save_dir = './model/save/sl_simulator/oneHot_oldReward_bitMore/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
+    n_episodes = 200000
+    uniform_episodes = 80000
+    reset_episodes = 40000
+    # save_dir = '/home/liuyajiao/UserSimulator/user-simulator-master/model/save/sl_simulator/oneHot_oldReward_bitMore/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
+    save_dir = 'model/save/gpt_simulator/must/'
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     use_sequicity_for_rl_model = False
@@ -51,6 +54,7 @@ class Config(object):
     discrete_act = True
     discounted_factor = 0.9#0.99#0.9
     init_exp = 0.5 if discrete_act else 0
+    reset_exp = 0.1
     final_exp = 0 if discrete_act else 0
     loose_agents = True
     small_value = 0
