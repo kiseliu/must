@@ -98,7 +98,7 @@ def plot_whole():
     total = sum(list(sample_num.values()))
     values = [sample_num.get('US-AgenT')/total, sample_num.get('US-AgenR')/total, 
               sample_num.get('US-RNNT')/total, sample_num.get('US-GPT-MWZ')/total]
-    labels = ['AgenT', 'AgenR', 'RNNT', '$\mathrm{GPT}_{\mathrm{SL}}$'] 
+    labels = ['AgenT', 'AgenR', 'RNNT', 'GPT'] 
 
     def make_autopct(values):
         def my_autopct(pct):
@@ -123,7 +123,7 @@ def plot_whole():
     ax2.plot(xpoints, agen_t, color='b', label='AgenT')
     ax2.plot(xpoints, agen_r, color='darkorange', label='AgenR')
     ax2.plot(xpoints, rnn_t, color='g', label='RNNT')
-    ax2.plot(xpoints, gpt, color='r', label='$\mathrm{GPT}_{\mathrm{SL}}$')
+    ax2.plot(xpoints, gpt, color='r', label='GPT')
 
     ax2.set_xlim(0, max_lim)
     ax2.set_xticks(kedu) # 设置刻度
@@ -228,7 +228,7 @@ def plot_subfigures():
     ax4.set_xticks(kedu) # 设置刻度
     ax4.set_xticklabels(kedu, rotation = angle)
 
-    ax4.set_xlabel('The number of dialogues \n (4) The success rate of dialogue system S \n performing with $\mathrm{GPT}_{\mathrm{SL}}$.', fontsize=font_size)
+    ax4.set_xlabel('The number of dialogues', fontsize=font_size)
     ax4.set_ylim(0, 100)
     ax4.set_ylabel('The success rate', fontsize=font_size)
     ax4.legend(loc='lower right', prop={'size': 15})

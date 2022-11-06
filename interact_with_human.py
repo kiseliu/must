@@ -200,7 +200,7 @@ def run_one_dialog(env, pg_reinforce, goal_id):
     print("Test Episode "+"-"*20)
     print("#"*30)
     cur_mode = dialog_config.INTERACTIVE
-    state = env.reset(goal_id=goal_id, mode=cur_mode)   # user state
+    _, state, _ = env.reset(goal_id=goal_id, mode=cur_mode)   # user state
     total_rewards = 0
     total_t = 0
 
@@ -214,7 +214,10 @@ def run_one_dialog(env, pg_reinforce, goal_id):
         print('bit_vec: ', bit_vecs)
         action = pg_reinforce.sampleAction(state, rl_test=True, bit_vecs=bit_vecs)
         action = action.item()
-        next_state, reward, done = env.step(provided_sys_act=action, mode=cur_mode)
+        next_state, reward, done, _ = env.step(provided_sys_act=action, mode=cur_mode)
+        print('next_state = ', next_state)
+        print('reward = ', reward)
+        print('done = ', done)
 
         total_rewards += reward
         # reward = -10 if done else 0.1 # normalize reward
@@ -275,6 +278,8 @@ def compute_succ_rate():
     rnnt = [0, 0]
     gpt_sl = [0, 0]
     gpt_must = [0, 0]
+    gpt_uniform = [0, 0]
+    gpt_merging = [0, 0]
     def extract_res(path):
         data = open(path, 'r').read().split('\n')
         for line in data:
@@ -301,6 +306,8 @@ def compute_succ_rate():
             rnnt[1]+=1
             gpt_sl[1]+=1
             gpt_must[1]+=1
+            gpt_uniform[1]+=1
+            gpt_merging[1]+=1
         elif 'wrong' in line:
             if 'agent' in line:
                 agent[1]+=1
@@ -316,13 +323,20 @@ def compute_succ_rate():
 
             if 'gpt_must' in line:
                 gpt_must[1]+=1
-    
+
+            if 'gpt_uniform' in line:
+                gpt_uniform[1]+=1
+                
+            if 'gpt_merging' in line:
+                gpt_merging[1]+=1
+
     print('agent = ', agent, (50-agent[1])/50)
     print('agenr = ', agenr, (50-agenr[1])/50)
     print('rnnt = ', rnnt, (50-rnnt[1])/50)
     print('gpt_sl = ', gpt_sl, (50-gpt_sl[1])/50)
     print('gpt_must = ', gpt_must, (50-gpt_must[1])/50)
-
+    print('gpt_uniform = ', gpt_uniform, (50-gpt_uniform[1])/50)
+    print('gpt_merging = ', gpt_merging, (50-gpt_merging[1])/50)
 
 if __name__ == '__main__':
     goal_ids = ['WOZ20421.json', 'SNG02248.json', 'WOZ20528.json', 'WOZ20650.json', 'WOZ20452.json', 
@@ -344,15 +358,17 @@ if __name__ == '__main__':
     sys_rnng = 'model/save/sl_simulator/oneHot_oldReward_bitMore/best/0_2019-5-19-3-27-15-6-139-1.pkl'
     sys_gpt_sl = 'model/save/gpt_simulator/0_2021-9-28-20-28-2-1-271-0_42999.pkl'
     sys_gpt_must = 'model/save/gpt_simulator/0_2021-10-18-10-18-14-0-291-0_7999.pkl'
+    sys_gpt_unif = 'model/save/gpt_simulator/best/0_2022-9-15-22-25-39-3-258-0_136999.pkl'
+    sys_gpt_merfing = 'model/save/gpt_simulator/best/0_2022-9-12-9-50-3-0-255-0_43999.pkl'
     # sys_models = [sys_agent, sys_agenr, sys_ageng, sys_rnnt, sys_rnnr, sys_rnng, sys_gpt_sl, sys_gpt_must]
-    sys_models = [sys_agent, sys_agenr, sys_rnnt, sys_gpt_sl, sys_gpt_must]
+    sys_models = [sys_agent, sys_agenr, sys_rnnt, sys_gpt_sl, sys_gpt_must, sys_gpt_unif, sys_gpt_merfing]
 
     config.INTERACTIVE = True
     env = Enviroment(user=user, system=system, verbose=True, config=config)
-    sys_idx = 0
-    goal_idx = 0
+    sys_idx = -1
+    goal_idx = 49
     
-    interact(env, sys_models[sys_idx], goal_ids[goal_idx])
+    # interact(env, sys_models[sys_idx], goal_ids[goal_idx])
 
     # compute the results of human evaluations
     compute_succ_rate()

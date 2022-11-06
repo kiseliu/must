@@ -191,14 +191,14 @@ class Enviroment(object):
         self.done = False
         self.success = None
         self.first_step = True
-        self.user.reset()
+        self.user.reset(goal_id)
         self.system.reset()
 
         self.step_i = 0
         self.last_sys_act, self.last_sys_sent = None, None
 
-        # print("goal: ")
-        # pp(self.user.goal)
+        print("goal: ")
+        pp(self.user.goal)
         # first user sentence
         next_state, turn = self.step_user(mode=mode, mturk_res=mturk_res)
 
@@ -388,7 +388,7 @@ class Enviroment(object):
                 if self.verbose:
                     print("{} Sys: {}".format(self.step_i, self.last_sys_sent))
 
-            return next_state, reward, self.done
+            return next_state, reward, self.done, turn
 
     def step_system(self, provided_sys_act=None, mode=dialog_config.RL_TRAINING):
         # print("in step_system: ", provided_sys_act)
