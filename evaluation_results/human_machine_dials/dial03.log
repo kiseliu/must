@@ -58,4 +58,28 @@ sys: taj tandoori is located at 64 Cherry Hinton Road Cherry Hinton . Its phone 
 usr: no, that is all i need.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20528.json', 
+        'cur_info': {'food': 'indian', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'reqt': ['phone']}
+usr: can you help me find a good indian restaurant in the south ?
+sys: taj tandoori is a indian restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes, what is its phone number ?
+sys: taj tandoori is located at 64 Cherry Hinton Road Cherry Hinton . Its phone number is 01223412299 and the postcode is cb17aa . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20528.json', 
+        'cur_info': {'food': 'indian', 'area': 'south'}, 
+        'first_choice_match': 1, 
+        'reqt': ['phone']}
+usr: can you help me find a good indian restaurant in the south ?
+sys: taj tandoori is a indian restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: yes, what is its phone number ?
+sys: taj tandoori is located at 64 Cherry Hinton Road Cherry Hinton . Its phone number is 01223412299 and the postcode is cb17aa . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

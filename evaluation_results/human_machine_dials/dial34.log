@@ -78,4 +78,36 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SSNG0080.json', 
+        'cur_info': {'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '3', 'day': 'thursday', 'time': '12:15'}, 
+        'book_second_choice': {'day': 'wednesday'}, 
+        'cur_book': {'people': '3', 'day': 'thursday', 'time': '12:15'}}
+usr: i am looking for a restaurant , something moderate -ly priced .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: great . i would like a table at 12:15 on thursday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 12:15 on thursday for 3 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SSNG0080.json', 
+        'cur_info': {'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 2, 
+        'book_first_choice': {'people': '3', 'day': 'thursday', 'time': '12:15'}, 
+        'book_second_choice': {'day': 'wednesday'}, 
+        'cur_book': {'people': '3', 'day': 'thursday', 'time': '12:15'}}
+usr: i am looking for a restaurant , something moderate -ly priced .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: great . i would like a table at 12:15 on thursday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 12:15 on thursday for 3 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt|gpt_sl wrong

@@ -78,4 +78,36 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG01162.json', 
+        'cur_info': {'name': 'travellers rest'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:15', 'day': 'saturday', 'people': '1'}, 
+        'book_second_choice': {'day': 'monday'}, 
+        'cur_book': {'time': '14:15', 'day': 'saturday', 'people': '1'}}
+usr: hi . help me find a restaurant called travellers rest please
+sys: travellers rest is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great . i would like a table at 14:15 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: yes, I want to book for 1 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG01162.json', 
+        'cur_info': {'name': 'travellers rest'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:15', 'day': 'saturday', 'people': '1'}, 
+        'book_second_choice': {'day': 'monday'}, 
+        'cur_book': {'time': '14:15', 'day': 'saturday', 'people': '1'}}
+usr: hi . help me find a restaurant called travellers rest please
+sys: travellers rest is a british restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great . i would like a table at 14:15 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: yes, I want to book for 1 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt|gpt_sl wrong

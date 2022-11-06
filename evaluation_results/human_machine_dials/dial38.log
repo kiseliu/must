@@ -100,4 +100,40 @@ sys: I am sorry, but the restaurant is fully booked at that time. Is there anyth
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
-# result: agenr|rnnt|gpt_sl|gpt_must wrong
+# sys_gpt_uniform
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG0620.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '14:00', 'day': 'saturday', 'people': '7'}, 
+        'book_second_choice': {'time': '15:00'}, 
+        'cur_book': {'time': '14:00', 'day': 'saturday', 'people': '7'}}
+usr: could you help me find an indian restaurant please ?
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 14:00 on saturday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 14:00 on saturday for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: sorry, i prefer to eat in the west of town, please .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# result: agenr|rnnt|gpt_sl|gpt_must|gpt_uniform|gpt_merging wrong

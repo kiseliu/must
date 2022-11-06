@@ -98,4 +98,44 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, thanks.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG01611.json', 
+        'info_first_choice': {'food': 'persian', 'pricerange': 'moderate', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'modern european'}, 
+        'cur_info': {'food': 'persian', 'pricerange': 'moderate', 'area': 'centre'}, 
+        'book_first_choice': {'time': '16:00', 'day': 'thursday', 'people': '8'}, 
+        'book_second_choice': {'day': 'sunday'}, 
+        'cur_book': {'time': '16:00', 'day': 'thursday', 'people': '8'}}
+usr: are there any persian restaurant -s in cambridge ?
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about modern european food on the centre part of town ?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, would you reserve a table for 8 for me ? i would like that to be at 16:00 on thursday .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about sunday?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG01611.json', 
+        'info_first_choice': {'food': 'persian', 'pricerange': 'moderate', 'area': 'centre'}, 
+        'first_choice_match': 0,
+        'info_second_choice': {'food': 'modern european'}, 
+        'cur_info': {'food': 'persian', 'pricerange': 'moderate', 'area': 'centre'}, 
+        'book_first_choice': {'time': '16:00', 'day': 'thursday', 'people': '8'}, 
+        'book_second_choice': {'day': 'sunday'}, 
+        'cur_book': {'time': '16:00', 'day': 'thursday', 'people': '8'}}
+usr: are there any persian restaurant -s in cambridge ?
+sys: I am sorry, but there are no restaurants matching your request. Is there anything else I can help you with?
+usr: how about modern european food on the centre part of town ?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, would you reserve a table for 8 for me ? i would like that to be at 16:00 on thursday .
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about sunday?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thanks.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

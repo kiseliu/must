@@ -26,7 +26,7 @@ class Config(object):
 
     # rl
     n_episodes = 200000
-    uniform_episodes = 80000
+    uniform_episodes = 40000
     reset_episodes = 40000
     # save_dir = '/home/liuyajiao/UserSimulator/user-simulator-master/model/save/sl_simulator/oneHot_oldReward_bitMore/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
     save_dir = 'model/save/gpt_simulator/must/'

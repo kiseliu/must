@@ -88,4 +88,40 @@ sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number 
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20469.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address']}
+usr: can you help me find a cheap place to eat ?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I suddenly want to find a portuguese restaurant?
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: and i want the phone number of it.
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20469.json', 
+        'cur_info': {'food': 'portuguese', 'pricerange': 'cheap'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address']}
+usr: can you help me find a cheap place to eat ?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, I suddenly want to find a portuguese restaurant?
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , please give me the complete address .
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: and i want the phone number of it.
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

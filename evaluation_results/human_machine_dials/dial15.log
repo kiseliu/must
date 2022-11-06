@@ -80,4 +80,36 @@ sys: yippee noodle bar is located at 40428 King Street City Centre . Its phone n
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG0536.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'moderate', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone', 'postcode']}
+usr: can you help me find an moderate place to eat ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: yes , let s try some asian oriental food .
+sys: yippee noodle bar is a asian oriental restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: yippee noodle bar is located at 40428 King Street City Centre . Its phone number is 01223518111 and the postcode is cb11lh . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG0536.json', 
+        'cur_info': {'food': 'asian oriental', 'pricerange': 'moderate', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'reqt': ['address', 'phone', 'postcode']}
+usr: can you help me find an moderate place to eat ?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i prefer to eat in the centre of town , please .
+sys: pizza express is a italian restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: yes , let s try some asian oriental food .
+sys: yippee noodle bar is a asian oriental restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: yippee noodle bar is located at 40428 King Street City Centre . Its phone number is 01223518111 and the postcode is cb11lh . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: agent|rnnt wrong

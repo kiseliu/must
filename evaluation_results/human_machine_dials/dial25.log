@@ -89,4 +89,42 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: thank you. bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 8 people at 11:30?
+sys: Could you please tell me what day you would like for the reservation?
+usr: yes, this wednesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you. bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG0558.json', 
+        'cur_info': {'food': 'modern european', 'pricerange': 'moderate'}, 
+        'first_choice_match': 3, 
+        'anything_else': True, 
+        'cur_book': {'time': '11:30', 'day': 'wednesday', 'people': '8'}}
+usr: can you direct me towards a moderate -ly priced restaurant serving modern european food ?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there the other restaurant else?
+sys: de luca cucina and bar is a modern european restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation for 8 people at 11:30?
+sys: Could you please tell me what day you would like for the reservation?
+usr: yes, this wednesday.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 13:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you. bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt|gpt_sl wrong                 but with zhengyi

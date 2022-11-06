@@ -90,4 +90,44 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SSNG0078.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '19:30', 'day': 'thursday', 'people': '7'}, 
+        'book_second_choice': {'day': 'sunday'}, 
+        'cur_book': {'time': '19:30', 'day': 'thursday', 'people': '7'}}
+usr: i am looking for a restaurant in the east part of town.
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i dont care the price range. please find an expensive one for me.
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: could you help me find a british restaurant please ?
+sys: grafton hotel restaurant is a british restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 19:30 on thursday.
+sys: Could you please tell me how many people you would like for the reservation?
+usr: for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SSNG0078.json', 
+        'cur_info': {'food': 'british', 'pricerange': 'expensive', 'area': 'east'}, 
+        'first_choice_match': 1, 
+        'book_first_choice': {'time': '19:30', 'day': 'thursday', 'people': '7'}, 
+        'book_second_choice': {'day': 'sunday'}, 
+        'cur_book': {'time': '19:30', 'day': 'thursday', 'people': '7'}}
+usr: i am looking for a restaurant in the east part of town.
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i dont care the price range. please find an expensive one for me.
+sys: yu garden is a chinese restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: could you help me find a british restaurant please ?
+sys: grafton hotel restaurant is a british restaurant on the east side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: sounds great . i would like a table at 19:30 on thursday.
+sys: Could you please tell me how many people you would like for the reservation?
+usr: for 7 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: agent|rnnt|gpt_sl wrong

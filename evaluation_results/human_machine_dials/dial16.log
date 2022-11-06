@@ -90,4 +90,40 @@ sys: curry garden is located at 106 Regent Street City Centre . Its phone number
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG0488.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 6, 
+        'reqt': ['postcode', 'address']}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, i forgot. I want an expensive one.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: and its phone number.
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG0488.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 6, 
+        'reqt': ['postcode', 'address']}
+usr: please help me find somewhere to eat in the centre.
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: pizza hut city centre is located at Regent Street City Centre . Its phone number is 01223323737 and the postcode is cb21ab . is there anything else i can help you with ?
+usr: sorry, i forgot. I want an expensive one.
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, please give me the complete address .
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: and its phone number.
+sys: curry garden is located at 106 Regent Street City Centre . Its phone number is 01223302330 and the postcode is cb21dp . is there anything else i can help you with ?
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt wrong

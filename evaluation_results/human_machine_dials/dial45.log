@@ -103,4 +103,46 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SSNG0066.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'anything_else': True, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '13:00'}}
+usr: i am looking for a restaurant in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer an expensive one please .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: are there any other options?
+sys: eraina is a european restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 4 people at 13:30 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SSNG0066.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 33, 
+        'anything_else': True, 
+        'book_first_choice': {'people': '1', 'day': 'thursday', 'time': '13:00'}, 
+        'book_second_choice': {'time': '14:00'}, 
+        'cur_book': {'people': '1', 'day': 'thursday', 'time': '13:00'}}
+usr: i am looking for a restaurant in the centre .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer an expensive one please .
+sys: curry garden is a indian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: stazione restaurant and coffee bar is a italian restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: are there any other options?
+sys: eraina is a european restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: that sounds great . i would like a table for 4 people at 13:30 on wednesday. 
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: agent|rnnt wrong

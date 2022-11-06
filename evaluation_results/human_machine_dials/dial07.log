@@ -68,4 +68,32 @@ sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number 
 usr: bye. thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20337.json', 
+        'cur_info': {'pricerange': 'cheap', 'area': 'south'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i want to find a cheap restaurant located in cambridge south .
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20337.json', 
+        'cur_info': {'pricerange': 'cheap', 'area': 'south'}, 
+        'first_choice_match': 2, 
+        'reqt': ['address', 'phone']}
+usr: i want to find a cheap restaurant located in cambridge south .
+sys: nandos is a portuguese restaurant on the south side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: ok, i also want the address.
+sys: nandos is located at Cambridge Leisure Park Clifton Way . Its phone number is 01223327908 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

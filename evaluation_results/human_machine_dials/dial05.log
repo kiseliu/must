@@ -68,4 +68,32 @@ sys: curry prince is located at 451 Newmarket Road Fen Ditton . Its phone number
 usr: no, thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20452.json', 
+        'cur_info': {'food': 'indian', 'area': 'east'}, 
+        'first_choice_match': 4, 
+        'reqt': ['address', 'phone']}
+usr: please help me find somewhere to eat in the east.
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer indian food , please !
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , can i have the address?
+sys: curry prince is located at 451 Newmarket Road Fen Ditton . Its phone number is 01223566388 and the postcode is cb58jj . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20452.json', 
+        'cur_info': {'food': 'indian', 'area': 'east'}, 
+        'first_choice_match': 4, 
+        'reqt': ['address', 'phone']}
+usr: please help me find somewhere to eat in the east.
+sys: the missing sock is a international restaurant on the east side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: i would prefer indian food , please !
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , can i have the address?
+sys: curry prince is located at 451 Newmarket Road Fen Ditton . Its phone number is 01223566388 and the postcode is cb58jj . is there anything else i can help you with ?
+usr: no, thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

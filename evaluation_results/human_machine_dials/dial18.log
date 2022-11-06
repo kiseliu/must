@@ -83,4 +83,38 @@ sys: ali baba is located at 59 Hills Road City Centre . Its phone number is 0146
 usr: no, thank you. that's all i need.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20544.json', 
+        'cur_info': {'food': 'lebanese', 'pricerange': 'moderate'}, 
+        'first_choice_match': 1, 
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there any lebanese food ?
+sys: ali baba is a lebanese restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, is there anything else?
+sys: I'm sorry, there is no other restaurant matching your request.
+usr: alright, can i get the phone number and address for the ali baba ?
+sys: ali baba is located at 59 Hills Road City Centre . Its phone number is 01462432565 and the postcode is cb21nt . is there anything else i can help you with ?
+usr: no, thank you. that's all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20544.json', 
+        'cur_info': {'food': 'lebanese', 'pricerange': 'moderate'}, 
+        'first_choice_match': 1, 
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for a moderate restaurant to have a meal .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there any lebanese food ?
+sys: ali baba is a lebanese restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: ok, is there anything else?
+sys: I'm sorry, there is no other restaurant matching your request.
+usr: alright, can i get the phone number and address for the ali baba ?
+sys: ali baba is located at 59 Hills Road City Centre . Its phone number is 01462432565 and the postcode is cb21nt . is there anything else i can help you with ?
+usr: no, thank you. that's all i need.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt wrong

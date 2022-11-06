@@ -20,8 +20,8 @@ class _Config:
         self.root_dir = "."
         # self.gpt_path = '/home/liuyajiao/pretrained-models/distilgpt2/'
         self.gpt_path = 'simulator_gpt_act/models/agenda/b4_g16_lr0.001/epoch50_trloss0.1173_gpt2'
-        # self.eval_gpt_path = './models/gpt/epoch18_trloss0.65_gpt2_0.003'
-        self.eval_gpt_path = './simulator_gpt_act/models/mwz/b4_g16_lr0.001/epoch59_trloss0.2476_gpt2'
+        self.eval_gpt_path = './simulator_gpt_act/models/mwz/b4_g16_lr0.001/epoch58_trloss0.2602_gpt2'
+        # self.eval_gpt_path = './simulator_gpt_act/models/mwz/b4_g16_lr0.001/epoch60_trloss0.2484_gpt2'
         self.model_path = self.root_dir + '/models/multi_woz_simulator911_goal.pkl'
         self.result_path = self.root_dir + '/results/multi_woz_simulator_gpt_oracle.csv'
         self.vocab_path = self.root_dir + '/vocab/vocab-multi_woz_simulator911_goal.pkl'

@@ -99,4 +99,46 @@ sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hint
 usr: no, that is all i need.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20162.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'south'}, 
+        'first_choice_match': 5, 
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: please help me find somewhere to eat in the south.
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: could you help to find another restaurant?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: expensive price range please . can i also have the address and phone number of the venue ?
+sys: pizza hut cherry hinton is located at G4 Cambridge Leisure Park Clifton Way Cherry Hinton . Its phone number is 01223323737 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: i would like something in the expensive price range .
+sys: taj tandoori is a indian restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: are there any other options?
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, can i also have the address and phone number of the venue ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20162.json', 
+        'cur_info': {'pricerange': 'expensive', 'area': 'south'}, 
+        'first_choice_match': 5, 
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: please help me find somewhere to eat in the south.
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: could you help to find another restaurant?
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: expensive price range please . can i also have the address and phone number of the venue ?
+sys: pizza hut cherry hinton is located at G4 Cambridge Leisure Park Clifton Way Cherry Hinton . Its phone number is 01223323737 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: i would like something in the expensive price range .
+sys: taj tandoori is a indian restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: are there any other options?
+sys: chiquito restaurant bar is a mexican restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: great, can i also have the address and phone number of the venue ?
+sys: chiquito restaurant bar is located at 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton . Its phone number is 01223400170 and the postcode is cb17dy . is there anything else i can help you with ?
+usr: no, that is all i need.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt wrong

@@ -76,4 +76,36 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG1224.json', 
+        'cur_info': {'food': 'japanese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'cur_book': {'people': '4', 'day': 'friday', 'time': '17:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , let s try some japanese food .
+sys: wagamama is a japanese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation?
+sys: Could you please tell me how many people and what day and time you would like for the reservation?
+usr: i want to make a reservation at 17:30 on friday for 8 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG1224.json', 
+        'cur_info': {'food': 'japanese', 'pricerange': 'expensive', 'area': 'centre'}, 
+        'first_choice_match': 1, 
+        'cur_book': {'people': '4', 'day': 'friday', 'time': '17:30'}}
+usr: i am looking for place -s to eat in the centre part of town .
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: yes , let s try some japanese food .
+sys: wagamama is a japanese restaurant on the centre side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: can you help me to make a reservation?
+sys: Could you please tell me how many people and what day and time you would like for the reservation?
+usr: i want to make a reservation at 17:30 on friday for 8 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: agenr|rnnt|gpt_sl wrong

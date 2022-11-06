@@ -91,4 +91,42 @@ sys: restaurant alimentum is located at 152 - 154 Hills Road . Its phone number 
 usr: ok, thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20451.json', 
+        'cur_info': {'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the south , please .
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: it should be in the moderate price range .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: are there any other options?
+sys: I'm sorry, there is no other restaurant matching your request.
+usr: ok, can i have the address and phone number of restaurant alimentum?
+sys: restaurant alimentum is located at 152 - 154 Hills Road . Its phone number is 01223413000 and the postcode is cb28pb . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20451.json', 
+        'cur_info': {'pricerange': 'moderate', 'area': 'south'}, 
+        'first_choice_match': 2,
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: hello ! i would like to go to a restaurant in the south , please .
+sys: the good luck chinese food takeaway is a chinese restaurant on the south side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: it should be in the moderate price range .
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: is there anything else?
+sys: restaurant alimentum is a modern european restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: are there any other options?
+sys: I'm sorry, there is no other restaurant matching your request.
+usr: ok, can i have the address and phone number of restaurant alimentum?
+sys: restaurant alimentum is located at 152 - 154 Hills Road . Its phone number is 01223413000 and the postcode is cb28pb . is there anything else i can help you with ?
+usr: ok, thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt wrong

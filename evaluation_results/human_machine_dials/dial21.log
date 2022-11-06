@@ -58,4 +58,28 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG0600.json', 
+        'cur_info': {'name': 'india house'}, 
+        'cur_book': {'time': '16:30', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 1}
+usr: can you help me find a restaurant called india house ?
+sys: india house is a indian restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i would like to book for 4 on saturday , at 16:30 .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG0600.json', 
+        'cur_info': {'name': 'india house'}, 
+        'cur_book': {'time': '16:30', 'day': 'saturday', 'people': '4'}, 
+        'first_choice_match': 1}
+usr: can you help me find a restaurant called india house ?
+sys: india house is a indian restaurant on the west side of town. It's in the expensive price range. Is there anything else I can help you with?
+usr: i would like to book for 4 on saturday , at 16:30 .
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

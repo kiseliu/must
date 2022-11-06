@@ -73,4 +73,34 @@ sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 012
 usr: no, thank you. and bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20379.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate'}, 
+        'first_choice_match': 4,
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an moderate restaurant that serves indian food please .
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: are there any options?
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, thank you. and bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20379.json', 
+        'cur_info': {'food': 'indian', 'pricerange': 'moderate'}, 
+        'first_choice_match': 4,
+        'anything_else': True, 
+        'reqt': ['address', 'phone']}
+usr: i am looking for an moderate restaurant that serves indian food please .
+sys: curry prince is a indian restaurant on the east side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: are there any options?
+sys: the nirala is a indian restaurant on the north side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great , what is their phone number and address ?
+sys: the nirala is located at 7 Milton Road Chesterton . Its phone number is 01223360966 and the postcode is cb41uy . is there anything else i can help you with ?
+usr: no, thank you. and bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: rnnt wrong

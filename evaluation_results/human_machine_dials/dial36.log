@@ -68,4 +68,32 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SNG0663.json', 
+        'cur_info': {'food': 'italian', 'pricerange': 'cheap'}, 
+        'first_choice_match': 5, 
+        'book_first_choice': {'time': '16:45', 'day': 'monday', 'people': '4'}, 
+        'book_second_choice': {'time': '17:45'}, 
+        'cur_book': {'time': '16:45', 'day': 'monday', 'people': '4'}}
+usr: could you help me find a cheap restaurant please ?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great, i would like a table at 16:45 on sunday for 4 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SNG0663.json', 
+        'cur_info': {'food': 'italian', 'pricerange': 'cheap'}, 
+        'first_choice_match': 5, 
+        'book_first_choice': {'time': '16:45', 'day': 'monday', 'people': '4'}, 
+        'book_second_choice': {'time': '17:45'}, 
+        'cur_book': {'time': '16:45', 'day': 'monday', 'people': '4'}}
+usr: could you help me find a cheap restaurant please ?
+sys: pizza hut city centre is a italian restaurant on the centre side of town. It's in the cheap price range. Is there anything else I can help you with?
+usr: great, i would like a table at 16:45 on sunday for 4 people.
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: same

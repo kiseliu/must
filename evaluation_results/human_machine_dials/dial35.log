@@ -96,4 +96,44 @@ sys: I have booked the reservation for you. And you reference number is ABC.
 usr: ok, bye.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'SSNG0028.json', 
+        'cur_info': {'food': 'british', 'area': 'west'}, 
+        'first_choice_match': 3,
+        'book_first_choice': {'people': '5', 'day': 'sunday', 'time': '18:30'}, 
+        'book_second_choice': {'time': '19:30'}, 
+        'cur_book': {'people': '5', 'day': 'sunday', 'time': '18:30'}}
+usr: could you help me find a british restaurant please ?
+sys: restaurant one seven is a british restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i want to dine in the west.
+sys: saint johns chop house is a british restaurant on the west side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: great . i would like a table at 18:30 on sunday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 18:30 on sunday for 5 people.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 19:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'SSNG0028.json', 
+        'cur_info': {'food': 'british', 'area': 'west'}, 
+        'first_choice_match': 3,
+        'book_first_choice': {'people': '5', 'day': 'sunday', 'time': '18:30'}, 
+        'book_second_choice': {'time': '19:30'}, 
+        'cur_book': {'people': '5', 'day': 'sunday', 'time': '18:30'}}
+usr: could you help me find a british restaurant please ?
+sys: restaurant one seven is a british restaurant on the centre side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: i want to dine in the west.
+sys: saint johns chop house is a british restaurant on the west side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: great . i would like a table at 18:30 on sunday. 
+sys: Could you please tell me how many people you would like for the reservation?
+usr: i would like a table at 18:30 on sunday for 5 people.
+sys: I am sorry, but the restaurant is fully booked at that time. Is there anything else I can help you with?
+usr: how about 19:30?
+sys: I have booked the reservation for you. And you reference number is ABC.
+usr: ok, bye.
+sys: Thanks for using the system! Have a good day!
+
 # result: agent|rnnt|gpt_sl wrong

@@ -322,6 +322,12 @@ class Enviroment(object):
             self.last_usr_act_true = None
         else:
             self.last_usr_act_true, self.last_usr_sent = self.user.respond(sys_act=self.last_sys_act, prev_sys=self.last_sys_sent)
+        
+        if not self.last_usr_sent:
+            print('automatic fail')
+            self.success = False
+            return None, -1, True
+        
         if self.last_usr_act_true is None:
             # is None only when using SL-based simulator
             self.last_usr_act_pred = self.system.nlu(usr_sent=self.last_usr_sent, usr_act=self.last_usr_act_true, mode=dialog_config.RL_TRAINING)

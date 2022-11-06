@@ -78,4 +78,36 @@ sys: prezzo is located at 21 - 24 Northampton Road . Its phone number is 0179952
 usr: bye. thank you.
 sys: Thanks for using the system! Have a good day!
 
+# sys_gpt_uniform
+goal = {'id': 'WOZ20208.json', 
+        'cur_info': {'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 3, 
+        'reqt': ['address', 'postcode']}
+usr: i want to find a moderate restaurant.
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: please help me find somewhere to eat in the west.
+sys: prezzo is a italian restaurant on the west side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: prezzo is located at 21 - 24 Northampton Road . Its phone number is 01799521260 and the postcode is cb30ad . is there anything else i can help you with ?
+usr: ok, i also want the postcode.
+sys: prezzo is located at 21 - 24 Northampton Road . Its phone number is 01799521260 and the postcode is cb30ad . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
+# sys_gpt_merging
+goal = {'id': 'WOZ20208.json', 
+        'cur_info': {'pricerange': 'moderate', 'area': 'west'}, 
+        'first_choice_match': 3, 
+        'reqt': ['address', 'postcode']}
+usr: i want to find a moderate restaurant.
+sys: pizza hut cherry hinton is a italian restaurant on the south side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: please help me find somewhere to eat in the west.
+sys: prezzo is a italian restaurant on the west side of town. It's in the moderate price range. Is there anything else I can help you with?
+usr: sounds great . can i get their number ?
+sys: prezzo is located at 21 - 24 Northampton Road . Its phone number is 01799521260 and the postcode is cb30ad . is there anything else i can help you with ?
+usr: ok, i also want the postcode.
+sys: prezzo is located at 21 - 24 Northampton Road . Its phone number is 01799521260 and the postcode is cb30ad . is there anything else i can help you with ?
+usr: bye. thank you.
+sys: Thanks for using the system! Have a good day!
+
 # result: same
