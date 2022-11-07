@@ -142,9 +142,13 @@ class Enviroment(object):
         self.user_action = None
         self.last_agent_action = None
         self.users = users
+        self.number_users = len(users)
         self.user_names = [u.name for u in users]
         self.user_mapping = dict(zip(self.user_names, list(range(len(users)))))
-        self.users_dist = [0.25, 0.5, 0.75, 1.0]
+        self.users_dist = [(i+1)/self.number_users for i in range(self.number_users)]
+        print('self.user_names = ', self.user_names)
+        print('self.users_dist = ', self.users_dist)
+
         self.system = system
         if config is not None:
             self.config = config
@@ -212,15 +216,16 @@ class Enviroment(object):
         self.users_dist = user_dist
 
     def sample_user(self):
-        sampled_int = random.random()
+        sampled_prob = random.random()
+        # print('^^^sampled_prob = ', sampled_prob)
 
-        if sampled_int <= self.users_dist[0]:
+        if sampled_prob <= self.users_dist[0]:
             return self.users[0]
-        elif sampled_int > self.users_dist[-2]:
+        elif sampled_prob > self.users_dist[-2]:
             return self.users[-1]
         else:
             for i in range(1, len(self.users_dist)):
-                if sampled_int > self.users_dist[i-1] and sampled_int <= self.users_dist[i]:
+                if sampled_prob > self.users_dist[i-1] and sampled_prob <= self.users_dist[i]:
                     return self.users[i]
 
     def queryable(self):

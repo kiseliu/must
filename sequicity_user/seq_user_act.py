@@ -44,7 +44,8 @@ class Seq_User_Act(Seq_User):
         self.state_list = []
         self.act = ''
         self.prev_usr = ''
-        self.name = 'US-RNNR' if nlg_sample else 'US-RNNT'
+        self.name = 'US-RNNR' if nlg_sample else ('US-RNNT' if nlg_template else 'US-RNNG')
+        print('******************** nlg_sample, nlg_template = ', nlg_sample, nlg_template, self.name)
 
         self._set_initial_model_parameters()
 

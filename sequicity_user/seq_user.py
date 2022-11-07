@@ -41,6 +41,7 @@ class Seq_User(User):
         # # # # # # # # # # # # # # # # 
 
         self.state_list = []
+        self.name = 'US-RNN'
 
         self._set_initial_model_parameters()
 
@@ -68,6 +69,7 @@ class Seq_User(User):
         self.check_info = dialog_config.INFO_CHECK_NOTYET
         self.check_reservation = []#dialog_config.RESERVATION_CHECK_NOTYET
         self.dialog_status = dialog_config.NO_OUTCOME_YET
+        self.fail_reason = ''
 
     def _set_initial_goal_dic(self):
         # # goal transfer into list
