@@ -126,7 +126,7 @@ class GenericEvaluator:
         self.metric_dict = {}
         self.entity_dict = {}
         filename = result_path.split('/')[-1]
-        dump_dir = './sheets/' + filename.replace('.csv','.report.txt')
+        dump_dir = './results/sheets/' + filename.replace('.csv','.report.txt')
         self.dump_file = open(dump_dir,'w')
 
     def _print_dict(self, dic):
