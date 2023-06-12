@@ -24,8 +24,7 @@ class Config(object):
     topk = 20
 
     # Policy model
-    # save_dir = '/home/liuyajiao/UserSimulator/user-simulator-master/model/save/sl_simulator/oneHot_oldReward_bitMore/' # save_dir = '/home/wyshi/simulator/model/save/sl_simulator/retrieval/oneHot_oldReward_bitMore/'#'/home/wyshi/simulator/model/save/sl_simulator/generative/oneHot_oldReward_bitMore/'
-    save_dir = 'model/save/gpt_simulator/must/'
+    save_dir = './model/save/must/'
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
@@ -51,15 +50,16 @@ class Config(object):
     use_new_reward = False
 
     warm_start_episodes = 0
-    n_episodes = 200000
-    uniform_episodes = 40000
-    reset_episodes = 40000
+    n_episodes = 100000
+    uniform_episodes = 40000     # used for MUST training
+    reset_episodes = 40000       # used for MUST training
 
     seed = 0
     lr = 1e-4
+
     discrete_act = True
     init_exp = 0.5 if discrete_act else 0
-    reset_exp = 0.1
+    reset_exp = 0.1              # used for MUST training
     final_exp = 0 if discrete_act else 0
     discounted_factor = 0.9 #0.99#0.9
     loose_agents = True
@@ -78,4 +78,3 @@ class Config(object):
     # sequicity parameters
     vocab_size = 800
     pretrained_dir = './sequicity_user/models/multiwoz_sys911.pkl'
-

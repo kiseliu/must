@@ -15,6 +15,7 @@ import pandas as pd
 
 import torch
 import torch.optim as optim
+
 from simulator.user import User
 from simulator.loose_user import LooseUser
 from simulator.system import System
@@ -86,6 +87,68 @@ env = Enviroment(users=users, system=system, verbose=True, config=config)
 sys_act = None
 status = []
 
+
+def run_one_dialog(env, pg_reinforce, assigned_name=None):
+    print("#"*30)
+    print("Test Episode "+"-"*20)
+    print("#"*30)
+    cur_mode = dialog_config.RL_TRAINING
+    state = env.reset(mode=cur_mode, user_name=assigned_name)
+    user_name = env.user.name
+    total_rewards = 0
+    total_t = 0
+
+    while True:
+        if config.with_bit:
+            bit_vecs = get_bit_vector(system)
+        else:
+            bit_vecs = None
+        # print('*** bit_vec: ', bit_vecs)
+        action = pg_reinforce.sampleAction(state, rl_test=True, bit_vecs=bit_vecs)
+        action = action.item()
+        next_state, reward, done = env.step(provided_sys_act=action, mode=cur_mode)
+
+        total_rewards += reward
+        # reward = -10 if done else 0.1 # normalize reward
+        pg_reinforce.storeRollout(state, action, reward, bit_vecs=bit_vecs)
+
+        state = next_state
+        total_t += 1
+        if done:
+            break
+
+    pg_reinforce.cleanUp()
+    print("Finished after {} timesteps".format(total_t))
+    print('dialog_status: {}'.format(env.success))
+    print("Reward for this episode: {}".format(total_rewards))
+    print("#" * 30)
+
+    return total_rewards, total_t, user_name, env.success
+
+def test(env, pg_reinforce, n=50):
+    reward_list = []
+    dialogLen_list = []
+    success_list = []
+    # print(i_episode)
+
+    mab_dict = {}
+    for u in users:
+        u_succ_list = []
+        u_name = u.name
+        for i_test in range(n):
+            assert len(pg_reinforce.reward_buffer) == 0
+            cur_reward, cur_dialogLen, user_name, cur_success = run_one_dialog(env, pg_reinforce, assigned_name=u_name)
+            assert cur_success is not None
+            reward_list.append(cur_reward)
+            dialogLen_list.append(cur_dialogLen)
+            # print(cur_reward)
+            # print(cur_dialogLen)
+            # print(cur_success)
+            success_list.append(int(cur_success))
+            u_succ_list.append(int(cur_success))
+        succ_rate = sum(u_succ_list)/n
+        mab_dict[u_name] = succ_rate
+    return reward_list, dialogLen_list, success_list, mab_dict
 
 
 def get_bit_vector(system):
@@ -277,69 +340,6 @@ def compute_ucb(mab_dict, multi_armed_bandits_dict, steps, reset_n):
     if steps >= UNIFORM_EPISODES:
         print('Reset user simulator distribution with UCB')
         env.reset_user_dist(mab_dist_list)
-
-
-def run_one_dialog(env, pg_reinforce, assigned_name=None):
-    print("#"*30)
-    print("Test Episode "+"-"*20)
-    print("#"*30)
-    cur_mode = dialog_config.RL_TRAINING
-    state = env.reset(mode=cur_mode, user_name=assigned_name)
-    user_name = env.user.name
-    total_rewards = 0
-    total_t = 0
-
-    while True:
-        if config.with_bit:
-            bit_vecs = get_bit_vector(system)
-        else:
-            bit_vecs = None
-        # print('*** bit_vec: ', bit_vecs)
-        action = pg_reinforce.sampleAction(state, rl_test=True, bit_vecs=bit_vecs)
-        action = action.item()
-        next_state, reward, done = env.step(provided_sys_act=action, mode=cur_mode)
-
-        total_rewards += reward
-        # reward = -10 if done else 0.1 # normalize reward
-        pg_reinforce.storeRollout(state, action, reward, bit_vecs=bit_vecs)
-
-        state = next_state
-        total_t += 1
-        if done:
-            break
-
-    pg_reinforce.cleanUp()
-    print("Finished after {} timesteps".format(total_t))
-    print('dialog_status: {}'.format(env.success))
-    print("Reward for this episode: {}".format(total_rewards))
-    print("#" * 30)
-
-    return total_rewards, total_t, user_name, env.success
-
-def test(env, pg_reinforce, n=50):
-    reward_list = []
-    dialogLen_list = []
-    success_list = []
-    # print(i_episode)
-
-    mab_dict = {}
-    for u in users:
-        u_succ_list = []
-        u_name = u.name
-        for i_test in range(n):
-            assert len(pg_reinforce.reward_buffer) == 0
-            cur_reward, cur_dialogLen, user_name, cur_success = run_one_dialog(env, pg_reinforce, assigned_name=u_name)
-            assert cur_success is not None
-            reward_list.append(cur_reward)
-            dialogLen_list.append(cur_dialogLen)
-            # print(cur_reward)
-            # print(cur_dialogLen)
-            # print(cur_success)
-            success_list.append(int(cur_success))
-            u_succ_list.append(int(cur_success))
-        succ_rate = sum(u_succ_list)/n
-        mab_dict[u_name] = succ_rate
-    return reward_list, dialogLen_list, success_list, mab_dict
 
 
 if config.resume:

@@ -1,5 +1,4 @@
 from collections import deque
-import json
 
 import time
 import random
@@ -95,9 +94,9 @@ if config.use_sl_simulator:
     else:
         user = Seq_User_Act(nlg_sample=config.nlg_sample, nlg_template=config.nlg_template)
 
-# pp(config)
-# print('---' * 30)
-# pp(dialog_config)
+pp(config)
+print('---' * 30)
+pp(dialog_config)
 
 
 def get_bit_vector(system):
@@ -250,14 +249,8 @@ def run_one_dialog(env, pg_reinforce):
     print("#"*30)
     print("Test Episode "+"-"*20)
     print("#"*30)
-
-    dials = {}
-    turns = []
-
     cur_mode = dialog_config.RL_TRAINING
-    goal, state, turn = env.reset(mode=cur_mode)   # user state
-    dials['goal'] = goal
-    turns.append(turn)
+    state = env.reset(mode=cur_mode)   # user state
     total_rewards = 0
     total_t = 0
 
@@ -266,11 +259,10 @@ def run_one_dialog(env, pg_reinforce):
             bit_vecs = get_bit_vector(system)
         else:
             bit_vecs = None
-        # print('bit_vec: ', bit_vecs)
+        print('bit_vec: ', bit_vecs)
         action = pg_reinforce.sampleAction(state, rl_test=True, bit_vecs=bit_vecs)
         action = action.item()
-        next_state, reward, done, turn = env.step(provided_sys_act=action, mode=cur_mode)
-        turns.append(turn)
+        next_state, reward, done = env.step(provided_sys_act=action, mode=cur_mode)
 
         total_rewards += reward
         # reward = -10 if done else 0.1 # normalize reward
@@ -280,8 +272,6 @@ def run_one_dialog(env, pg_reinforce):
         total_t += 1
         if done:
             break
-    dials['turns'] = turns
-    dials['success'] = env.success
 
     pg_reinforce.cleanUp()
     print("Finished after {} timesteps".format(total_t))
@@ -289,19 +279,16 @@ def run_one_dialog(env, pg_reinforce):
     print("Reward for this episode: {}".format(total_rewards))
     print("#" * 30)
 
-    # pp(dials)
-    return total_rewards, total_t, env.success, dials
+    return total_rewards, total_t, env.success
 
 def test(env, pg_reinforce, n=50):
-    # all_dials = []
-
     reward_list = []
     dialogLen_list = []
     success_list = []
     # print(i_episode)
     for i_test in tqdm(range(n)):
         assert len(pg_reinforce.reward_buffer) == 0
-        cur_reward, cur_dialogLen, cur_success, dials = run_one_dialog(env, pg_reinforce)
+        cur_reward, cur_dialogLen, cur_success = run_one_dialog(env, pg_reinforce)
         assert cur_success is not None
         reward_list.append(cur_reward)
         dialogLen_list.append(cur_dialogLen)
@@ -309,10 +296,6 @@ def test(env, pg_reinforce, n=50):
         # print(cur_dialogLen)
         # print(cur_success)
         success_list.append(int(cur_success))
-        # all_dials.append(dials)
-
-    # with open('evaluation_results/simulated_agenda_dataset/dials_ar_ag.json', 'w', encoding='utf-8') as fw:
-    #     json.dump(all_dials, fw, indent=4)
     return reward_list, dialogLen_list, success_list
 
 
@@ -323,7 +306,6 @@ def load_policy_model(model_dir="model/test_nlg_no_warm_up_with_nlu.pkl"):
     net.eval()
     return net
 
-print('*****sys type = ', args.resume_rl_model_dir)
 policy_net = load_policy_model(args.resume_rl_model_dir)
 optimizer = optim.Adam(lr=config.lr, params=policy_net.parameters(),
                                   weight_decay=5e-5)

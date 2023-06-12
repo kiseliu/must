@@ -19,7 +19,7 @@ from simulator.user import User
 from simulator.loose_user import LooseUser
 from simulator.system import System
 from simulator.loose_system import LooseSystem
-from simulator.env_new import Enviroment
+from simulator.env_gpt import Enviroment
 import simulator.dialog_config as dialog_config
 
 from rl.my_pg import PolicyGradientREINFORCE

@@ -39,9 +39,8 @@ class Seq_User(User):
         self.m.load_model()
         self.entity = self.m.reader.entity
         # # # # # # # # # # # # # # # # 
-
-        self.state_list = []
         self.name = 'US-RNN'
+        self.state_list = []
 
         self._set_initial_model_parameters()
 

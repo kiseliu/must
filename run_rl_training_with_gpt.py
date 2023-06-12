@@ -23,7 +23,7 @@ from simulator.loose_user import LooseUser
 from simulator.system import System
 from simulator.loose_system import LooseSystem
 # from simulator.env import Enviroment
-from simulator.env_new import Enviroment
+from simulator.env_gpt import Enviroment
 import simulator.dialog_config as dialog_config
 
 from rl.my_pg import PolicyGradientREINFORCE
@@ -56,6 +56,8 @@ user = GPT_User(nlg_sample=None, nlg_template=None)
 pp(config)
 print('---' * 30)
 pp(dialog_config)
+print('---' * 30)
+print('\nUser type =', user.name)
 
 
 def run_one_dialog(env, pg_reinforce):

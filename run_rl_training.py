@@ -56,6 +56,8 @@ if config.use_sl_simulator:
 pp(config)
 print('---' * 30)
 pp(dialog_config)
+print('---' * 30)
+print('\nUser type =', user.name)
 
 
 def run_one_dialog(env, pg_reinforce):
@@ -347,7 +349,7 @@ while True:
 
         print("-*-" * 20)
         # initialize
-        _, state, _ = env.reset(mode=MODE)
+        state = env.reset(mode=MODE)
         total_rewards = 0
         total_t = 0
 
@@ -362,7 +364,7 @@ while True:
                 action = action.item()
             elif MODE == dialog_config.RL_WARM_START:
                 action = None
-            next_state, reward, done, _ = env.step(provided_sys_act=action, mode=MODE)
+            next_state, reward, done = env.step(provided_sys_act=action, mode=MODE)
             total_rewards += reward
 
             if MODE == dialog_config.RL_WARM_START:

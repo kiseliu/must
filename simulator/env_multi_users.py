@@ -1,16 +1,15 @@
 from __future__ import division, print_function
-import random
-import numpy as np
-# from util import oneHotLabel
-import pickle
 import os
-from numpy.random import random_sample
+import random
+
+import numpy as np
 from scipy.stats import entropy
 from scipy.stats import wasserstein_distance
 import simulator.dialog_config as dialog_config
 from simulator.agent.core import UserAct, SystemAct, Action
 # from config import Config
 import pdb
+from beeprint import pp
 
 # CONFIG = Config()
 
@@ -144,7 +143,7 @@ class Enviroment(object):
         self.users = users
         self.number_users = len(users)
         self.user_names = [u.name for u in users]
-        self.user_mapping = dict(zip(self.user_names, list(range(len(users)))))
+        self.user_mapping = dict(zip(self.user_names, list(range(self.number_users))))
         self.users_dist = [(i+1)/self.number_users for i in range(self.number_users)]
         print('self.user_names = ', self.user_names)
         print('self.users_dist = ', self.users_dist)
@@ -197,7 +196,7 @@ class Enviroment(object):
             self.user = self.users[self.user_mapping[user_name]]
         else:
             self.user = self.sample_user()
-        print("\nUser type = ", self.user.name)
+        print("\nUser type =", self.user.name)
         self.user.reset()
         self.system.reset()
 
@@ -443,8 +442,6 @@ class Enviroment(object):
             reward = dialog_config.FAILURE_REWARD
             self.done = True
             self.success = False
-            print('self.user.fail_reason = ', self.user.fail_reason)
-            print('DONE!!!')
 
         # not done yet
         elif self.user.dialog_status in [dialog_config.NO_OUTCOME_YET, dialog_config.TURN_FAIL_FOR_SL, dialog_config.TURN_SUCCESS_FOR_SL]:
@@ -456,8 +453,6 @@ class Enviroment(object):
 
     def evaluate_cur_move_new(self):
         # pdb.set_trace()
-
-
         def calculate_per_turn_reward(self, last_usr_act_str, sys_act_str):
             # last_usr_act = self.user.state['usr_act_sequence'][-2]
             turn_reward = dialog_config.PER_TURN_REWARD
@@ -504,8 +499,6 @@ class Enviroment(object):
             reward = dialog_config.FAILURE_REWARD
             self.done = True
             self.success = False
-            print('self.user.fail_reason = ', self.user.fail_reason)
-            print('DONE!!!')
 
         # not done yet
         elif self.user.dialog_status in [dialog_config.NO_OUTCOME_YET, dialog_config.TURN_FAIL_FOR_SL, dialog_config.TURN_SUCCESS_FOR_SL]:
