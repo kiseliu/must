@@ -1,5 +1,5 @@
 
-Codes for the paper "[One cannot stand for everyone! Leveraging Multiple User Simulators to train Task-oriented Dialogue Systems](https://openreview.net/forum?id=Y2E5-_HL0DV)" (ACL 2023).
+Codes for the paper "[One cannot stand for everyone! Leveraging Multiple User Simulators to train Task-oriented Dialogue Systems](https://aclanthology.org/2023.acl-long.1/)" (ACL 2023).
 
 
 # Dataset Preparation
